@@ -1,0 +1,1106 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>TARANG.lib.global_fns.universal &#8212; Tarang  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_api/TARANG/lib/global_fns/universal/index';</script>
+    <script src="../../../../../_static/custom.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Tarang  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../../pages/getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../pages/getting_started/usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../pages/getting_started/initconds.html">Defining Initial Conditions</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Test Cases</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../../pages/test_cases/3d_hydro.html">3D Hydrodynamics - Taylor Green Vortex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../pages/test_cases/2d_hydro.html">2D Hydrodynamics - Pair of Vortices</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../index.html">API Reference</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../py-modindex.html">Module Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../genindex.html">Index</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../../../_sources/_api/TARANG/lib/global_fns/universal/index.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>TARANG.lib.global_fns.universal</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays"><code class="docutils literal notranslate"><span class="pre">UniversalArrays</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.COMPUTE_NLIN_FIRST_FLAG"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.COMPUTE_NLIN_FIRST_FLAG</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.COMPUTE_DT_FLAG"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.COMPUTE_DT_FLAG</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.T_LAST"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.T_LAST</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.dt_fixed"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dt_fixed</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.dt"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dt</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.FORCE_PHASE_FIRST"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.FORCE_PHASE_FIRST</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.phase_ch1"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.phase_ch1</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.iter"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.iter</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.ubydx"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.ubydx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.exp_factor_array"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.exp_factor_array</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.exp_factor_array_eta"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.exp_factor_array_eta</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.cross_helicity"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.cross_helicity</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.exp_factor_array_kappa"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.exp_factor_array_kappa</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp_nlin"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp_nlin</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp1_RK"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp1_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp2_RK"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp2_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp3_RK"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp3_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp1b_RK"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp1b_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp2b_RK"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp2b_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp3b_RK"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp3b_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp_scalar1_RK"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp_scalar1_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp_scalar2_RK"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp_scalar2_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.tempR"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.tempR</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.dx"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.dy"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.dz"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.t"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_dt"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_dt</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_field_save"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_field_save</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_glob_energy_print"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_glob_energy_print</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_ekTk_save"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_ekTk_save</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_modes_save"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_modes_save</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.para"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.para</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id0"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.COMPUTE_NLIN_FIRST_FLAG</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.COMPUTE_DT_FLAG</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.T_LAST</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dt_fixed</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dt</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.FORCE_PHASE_FIRST</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.phase_ch1</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.iter</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.ubydx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.exp_factor_array</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp_nlin</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp1_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp2_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id13"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp3_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id14"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp1b_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp2b_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp3b_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp_scalar1_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp_scalar2_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.tempR</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id22"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id23"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id24"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_dt</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id25"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_field_save</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id26"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_glob_energy_print</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id27"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_ekTk_save</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id28"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_modes_save</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_buf"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_buf</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_dt_buf"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_dt_buf</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.set_arrays"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.set_arrays()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.set_exp_arrays"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.set_exp_arrays()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.set_grid_space"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.set_grid_space()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="module-TARANG.lib.global_fns.universal">
+<span id="tarang-lib-global-fns-universal"></span><h1>TARANG.lib.global_fns.universal<a class="headerlink" href="#module-TARANG.lib.global_fns.universal" title="Link to this heading">#</a></h1>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.global_fns.universal.UniversalArrays" title="TARANG.lib.global_fns.universal.UniversalArrays"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UniversalArrays</span></code></a></p></td>
+<td><p>Class representing universal arrays for the TARANG solver.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">TARANG.lib.global_fns.universal.</span></span><span class="sig-name descname"><span class="pre">UniversalArrays</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">para</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays" title="Link to this definition">#</a></dt>
+<dd><p>Class representing universal arrays for the TARANG solver.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.COMPUTE_NLIN_FIRST_FLAG">
+<span class="sig-name descname"><span class="pre">COMPUTE_NLIN_FIRST_FLAG</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.COMPUTE_NLIN_FIRST_FLAG" title="Link to this definition">#</a></dt>
+<dd><p>Flag to indicate if nonlinear computation is first.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.COMPUTE_DT_FLAG">
+<span class="sig-name descname"><span class="pre">COMPUTE_DT_FLAG</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.COMPUTE_DT_FLAG" title="Link to this definition">#</a></dt>
+<dd><p>Flag to indicate if time step computation is enabled.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.T_LAST">
+<span class="sig-name descname"><span class="pre">T_LAST</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.T_LAST" title="Link to this definition">#</a></dt>
+<dd><p>Flag to indicate if the last time step is reached.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.dt_fixed">
+<span class="sig-name descname"><span class="pre">dt_fixed</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.dt_fixed" title="Link to this definition">#</a></dt>
+<dd><p>Fixed time step.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.dt">
+<span class="sig-name descname"><span class="pre">dt</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.dt" title="Link to this definition">#</a></dt>
+<dd><p>Variable time step.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.FORCE_PHASE_FIRST">
+<span class="sig-name descname"><span class="pre">FORCE_PHASE_FIRST</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.FORCE_PHASE_FIRST" title="Link to this definition">#</a></dt>
+<dd><p>Flag to indicate if force phase is first.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.phase_ch1">
+<span class="sig-name descname"><span class="pre">phase_ch1</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.phase_ch1" title="Link to this definition">#</a></dt>
+<dd><p>Phase for the forcing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.iter">
+<span class="sig-name descname"><span class="pre">iter</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.iter" title="Link to this definition">#</a></dt>
+<dd><p>Iteration count.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.ubydx">
+<span class="sig-name descname"><span class="pre">ubydx</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.ubydx" title="Link to this definition">#</a></dt>
+<dd><p>Velocity by grid spacing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.exp_factor_array">
+<span class="sig-name descname"><span class="pre">exp_factor_array</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.exp_factor_array" title="Link to this definition">#</a></dt>
+<dd><p>Array for exponential factors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.exp_factor_array_eta">
+<span class="sig-name descname"><span class="pre">exp_factor_array_eta</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.exp_factor_array_eta" title="Link to this definition">#</a></dt>
+<dd><p>Array for exponential factors for magnetic diffusivity (MHD).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.cross_helicity">
+<span class="sig-name descname"><span class="pre">cross_helicity</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.cross_helicity" title="Link to this definition">#</a></dt>
+<dd><p>Array for cross helicity (MHD).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.exp_factor_array_kappa">
+<span class="sig-name descname"><span class="pre">exp_factor_array_kappa</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.exp_factor_array_kappa" title="Link to this definition">#</a></dt>
+<dd><p>Array for exponential factors for scalar diffusivity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.temp_nlin">
+<span class="sig-name descname"><span class="pre">temp_nlin</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp_nlin" title="Link to this definition">#</a></dt>
+<dd><p>Temporary array for nonlinear terms.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.temp1_RK">
+<span class="sig-name descname"><span class="pre">temp1_RK</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp1_RK" title="Link to this definition">#</a></dt>
+<dd><p>Temporary array for Runge-Kutta scheme.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.temp2_RK">
+<span class="sig-name descname"><span class="pre">temp2_RK</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp2_RK" title="Link to this definition">#</a></dt>
+<dd><p>Temporary array for Runge-Kutta scheme.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.temp3_RK">
+<span class="sig-name descname"><span class="pre">temp3_RK</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp3_RK" title="Link to this definition">#</a></dt>
+<dd><p>Temporary array for Runge-Kutta scheme.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.temp1b_RK">
+<span class="sig-name descname"><span class="pre">temp1b_RK</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp1b_RK" title="Link to this definition">#</a></dt>
+<dd><p>Temporary array for Runge-Kutta scheme.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.temp2b_RK">
+<span class="sig-name descname"><span class="pre">temp2b_RK</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp2b_RK" title="Link to this definition">#</a></dt>
+<dd><p>Temporary array for Runge-Kutta scheme.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.temp3b_RK">
+<span class="sig-name descname"><span class="pre">temp3b_RK</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp3b_RK" title="Link to this definition">#</a></dt>
+<dd><p>Temporary array for Runge-Kutta scheme.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.temp_scalar1_RK">
+<span class="sig-name descname"><span class="pre">temp_scalar1_RK</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp_scalar1_RK" title="Link to this definition">#</a></dt>
+<dd><p>Temporary array for scalar Runge-Kutta scheme.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.temp_scalar2_RK">
+<span class="sig-name descname"><span class="pre">temp_scalar2_RK</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp_scalar2_RK" title="Link to this definition">#</a></dt>
+<dd><p>Temporary array for scalar Runge-Kutta scheme.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.tempR">
+<span class="sig-name descname"><span class="pre">tempR</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.tempR" title="Link to this definition">#</a></dt>
+<dd><p>Temporary real array.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.dx">
+<span class="sig-name descname"><span class="pre">dx</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.dx" title="Link to this definition">#</a></dt>
+<dd><p>Grid spacing in x direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.dy">
+<span class="sig-name descname"><span class="pre">dy</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.dy" title="Link to this definition">#</a></dt>
+<dd><p>Grid spacing in y direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.dz">
+<span class="sig-name descname"><span class="pre">dz</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.dz" title="Link to this definition">#</a></dt>
+<dd><p>Grid spacing in z direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.t">
+<span class="sig-name descname"><span class="pre">t</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.t" title="Link to this definition">#</a></dt>
+<dd><p>Array for time steps.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.t_dt">
+<span class="sig-name descname"><span class="pre">t_dt</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_dt" title="Link to this definition">#</a></dt>
+<dd><p>Array for time steps for dt.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.t_field_save">
+<span class="sig-name descname"><span class="pre">t_field_save</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_field_save" title="Link to this definition">#</a></dt>
+<dd><p>Array for time steps for field saving.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.t_glob_energy_print">
+<span class="sig-name descname"><span class="pre">t_glob_energy_print</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_glob_energy_print" title="Link to this definition">#</a></dt>
+<dd><p>Array for time steps for global energy printing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.t_ekTk_save">
+<span class="sig-name descname"><span class="pre">t_ekTk_save</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_ekTk_save" title="Link to this definition">#</a></dt>
+<dd><p>Array for time steps for energy and transfer saving.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.t_modes_save">
+<span class="sig-name descname"><span class="pre">t_modes_save</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_modes_save" title="Link to this definition">#</a></dt>
+<dd><p>Array for time steps for modes saving.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.para">
+<span class="sig-name descname"><span class="pre">para</span></span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.para" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">COMPUTE_NLIN_FIRST_FLAG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id0" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id1">
+<span class="sig-name descname"><span class="pre">COMPUTE_DT_FLAG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id1" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id2">
+<span class="sig-name descname"><span class="pre">T_LAST</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#id2" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id3">
+<span class="sig-name descname"><span class="pre">dt_fixed</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#id3" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id4">
+<span class="sig-name descname"><span class="pre">dt</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#id4" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id5">
+<span class="sig-name descname"><span class="pre">FORCE_PHASE_FIRST</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id5" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id6">
+<span class="sig-name descname"><span class="pre">phase_ch1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#id6" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id7">
+<span class="sig-name descname"><span class="pre">iter</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#id7" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id8">
+<span class="sig-name descname"><span class="pre">ubydx</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#id8" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id9">
+<span class="sig-name descname"><span class="pre">exp_factor_array</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id9" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id10">
+<span class="sig-name descname"><span class="pre">temp_nlin</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id10" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id11">
+<span class="sig-name descname"><span class="pre">temp1_RK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id11" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id12">
+<span class="sig-name descname"><span class="pre">temp2_RK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id12" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id13">
+<span class="sig-name descname"><span class="pre">temp3_RK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id13" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id14">
+<span class="sig-name descname"><span class="pre">temp1b_RK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id14" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id15">
+<span class="sig-name descname"><span class="pre">temp2b_RK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id15" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id16">
+<span class="sig-name descname"><span class="pre">temp3b_RK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id16" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id17">
+<span class="sig-name descname"><span class="pre">temp_scalar1_RK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id17" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id18">
+<span class="sig-name descname"><span class="pre">temp_scalar2_RK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id18" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id19">
+<span class="sig-name descname"><span class="pre">tempR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id19" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id20">
+<span class="sig-name descname"><span class="pre">dx</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id20" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id21">
+<span class="sig-name descname"><span class="pre">dy</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id21" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id22">
+<span class="sig-name descname"><span class="pre">dz</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id22" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id23">
+<span class="sig-name descname"><span class="pre">t</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id23" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id24">
+<span class="sig-name descname"><span class="pre">t_dt</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id24" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id25">
+<span class="sig-name descname"><span class="pre">t_field_save</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id25" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id26">
+<span class="sig-name descname"><span class="pre">t_glob_energy_print</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id26" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id27">
+<span class="sig-name descname"><span class="pre">t_ekTk_save</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id27" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id28">
+<span class="sig-name descname"><span class="pre">t_modes_save</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id28" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.t_buf">
+<span class="sig-name descname"><span class="pre">t_buf</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_buf" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.t_dt_buf">
+<span class="sig-name descname"><span class="pre">t_dt_buf</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_dt_buf" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.set_arrays">
+<span class="sig-name descname"><span class="pre">set_arrays</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.set_arrays" title="Link to this definition">#</a></dt>
+<dd><p>Set the arrays for the universal arrays based on the simulation parameters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.set_exp_arrays">
+<span class="sig-name descname"><span class="pre">set_exp_arrays</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.set_exp_arrays" title="Link to this definition">#</a></dt>
+<dd><p>Set the exponential factor arrays based on the simulation parameters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.global_fns.universal.UniversalArrays.set_grid_space">
+<span class="sig-name descname"><span class="pre">set_grid_space</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.global_fns.universal.UniversalArrays.set_grid_space" title="Link to this definition">#</a></dt>
+<dd><p>Set the grid spacing based on the simulation parameters.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays"><code class="docutils literal notranslate"><span class="pre">UniversalArrays</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.COMPUTE_NLIN_FIRST_FLAG"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.COMPUTE_NLIN_FIRST_FLAG</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.COMPUTE_DT_FLAG"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.COMPUTE_DT_FLAG</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.T_LAST"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.T_LAST</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.dt_fixed"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dt_fixed</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.dt"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dt</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.FORCE_PHASE_FIRST"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.FORCE_PHASE_FIRST</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.phase_ch1"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.phase_ch1</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.iter"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.iter</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.ubydx"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.ubydx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.exp_factor_array"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.exp_factor_array</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.exp_factor_array_eta"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.exp_factor_array_eta</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.cross_helicity"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.cross_helicity</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.exp_factor_array_kappa"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.exp_factor_array_kappa</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp_nlin"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp_nlin</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp1_RK"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp1_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp2_RK"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp2_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp3_RK"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp3_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp1b_RK"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp1b_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp2b_RK"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp2b_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp3b_RK"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp3b_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp_scalar1_RK"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp_scalar1_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.temp_scalar2_RK"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp_scalar2_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.tempR"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.tempR</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.dx"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.dy"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.dz"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.t"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_dt"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_dt</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_field_save"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_field_save</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_glob_energy_print"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_glob_energy_print</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_ekTk_save"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_ekTk_save</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_modes_save"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_modes_save</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.para"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.para</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id0"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.COMPUTE_NLIN_FIRST_FLAG</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.COMPUTE_DT_FLAG</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.T_LAST</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dt_fixed</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dt</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.FORCE_PHASE_FIRST</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.phase_ch1</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.iter</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.ubydx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.exp_factor_array</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp_nlin</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp1_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp2_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id13"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp3_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id14"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp1b_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp2b_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp3b_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp_scalar1_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.temp_scalar2_RK</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.tempR</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id22"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.dz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id23"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id24"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_dt</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id25"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_field_save</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id26"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_glob_energy_print</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id27"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_ekTk_save</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id28"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_modes_save</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_buf"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_buf</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.t_dt_buf"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.t_dt_buf</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.set_arrays"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.set_arrays()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.set_exp_arrays"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.set_exp_arrays()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.global_fns.universal.UniversalArrays.set_grid_space"><code class="docutils literal notranslate"><span class="pre">UniversalArrays.set_grid_space()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Mahendra Verma, Shashwat Nirgudkar, Abhay Kumar
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

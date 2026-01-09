@@ -1,0 +1,1303 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>TARANG.lib.fields.vect_field &#8212; Tarang  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_api/TARANG/lib/fields/vect_field/index';</script>
+    <script src="../../../../../_static/custom.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Tarang  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../../pages/getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../pages/getting_started/usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../pages/getting_started/initconds.html">Defining Initial Conditions</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Test Cases</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../../pages/test_cases/3d_hydro.html">3D Hydrodynamics - Taylor Green Vortex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../pages/test_cases/2d_hydro.html">2D Hydrodynamics - Pair of Vortices</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../index.html">API Reference</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../py-modindex.html">Module Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../genindex.html">Index</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../../../_sources/_api/TARANG/lib/fields/vect_field/index.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>TARANG.lib.fields.vect_field</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField"><code class="docutils literal notranslate"><span class="pre">VectorField</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vkx"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vky"><code class="docutils literal notranslate"><span class="pre">VectorField.Vky</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vkz"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vx"><code class="docutils literal notranslate"><span class="pre">VectorField.Vx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vy"><code class="docutils literal notranslate"><span class="pre">VectorField.Vy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vz"><code class="docutils literal notranslate"><span class="pre">VectorField.Vz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.force_Vx"><code class="docutils literal notranslate"><span class="pre">VectorField.force_Vx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.force_Vy"><code class="docutils literal notranslate"><span class="pre">VectorField.force_Vy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.force_Vz"><code class="docutils literal notranslate"><span class="pre">VectorField.force_Vz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.nlinx"><code class="docutils literal notranslate"><span class="pre">VectorField.nlinx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.nliny"><code class="docutils literal notranslate"><span class="pre">VectorField.nliny</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.nlinz"><code class="docutils literal notranslate"><span class="pre">VectorField.nlinz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.ek"><code class="docutils literal notranslate"><span class="pre">VectorField.ek</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Tk"><code class="docutils literal notranslate"><span class="pre">VectorField.Tk</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.ek_table"><code class="docutils literal notranslate"><span class="pre">VectorField.ek_table</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Tk_table"><code class="docutils literal notranslate"><span class="pre">VectorField.Tk_table</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.total_energy"><code class="docutils literal notranslate"><span class="pre">VectorField.total_energy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.total_dissipation"><code class="docutils literal notranslate"><span class="pre">VectorField.total_dissipation</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.standard_dissipation"><code class="docutils literal notranslate"><span class="pre">VectorField.standard_dissipation</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.hypo_dissipation"><code class="docutils literal notranslate"><span class="pre">VectorField.hypo_dissipation</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.hyper_dissipation"><code class="docutils literal notranslate"><span class="pre">VectorField.hyper_dissipation</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.divergence"><code class="docutils literal notranslate"><span class="pre">VectorField.divergence</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.total_injection"><code class="docutils literal notranslate"><span class="pre">VectorField.total_injection</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.ur"><code class="docutils literal notranslate"><span class="pre">VectorField.ur</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vkx_modes_t"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkx_modes_t</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vky_modes_t"><code class="docutils literal notranslate"><span class="pre">VectorField.Vky_modes_t</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vkz_modes_t"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkz_modes_t</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vkx_mode"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkx_mode</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vky_mode"><code class="docutils literal notranslate"><span class="pre">VectorField.Vky_mode</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vkz_mode"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkz_mode</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.para"><code class="docutils literal notranslate"><span class="pre">VectorField.para</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id0"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><code class="docutils literal notranslate"><span class="pre">VectorField.Vky</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"><code class="docutils literal notranslate"><span class="pre">VectorField.Vx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"><code class="docutils literal notranslate"><span class="pre">VectorField.Vy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5"><code class="docutils literal notranslate"><span class="pre">VectorField.Vz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6"><code class="docutils literal notranslate"><span class="pre">VectorField.force_Vx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7"><code class="docutils literal notranslate"><span class="pre">VectorField.force_Vy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8"><code class="docutils literal notranslate"><span class="pre">VectorField.force_Vz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9"><code class="docutils literal notranslate"><span class="pre">VectorField.nlinx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10"><code class="docutils literal notranslate"><span class="pre">VectorField.nliny</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11"><code class="docutils literal notranslate"><span class="pre">VectorField.nlinz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12"><code class="docutils literal notranslate"><span class="pre">VectorField.ek</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id13"><code class="docutils literal notranslate"><span class="pre">VectorField.Tk</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id14"><code class="docutils literal notranslate"><span class="pre">VectorField.ek_table</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15"><code class="docutils literal notranslate"><span class="pre">VectorField.Tk_table</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16"><code class="docutils literal notranslate"><span class="pre">VectorField.total_energy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17"><code class="docutils literal notranslate"><span class="pre">VectorField.total_dissipation</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18"><code class="docutils literal notranslate"><span class="pre">VectorField.standard_dissipation</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19"><code class="docutils literal notranslate"><span class="pre">VectorField.divergence</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20"><code class="docutils literal notranslate"><span class="pre">VectorField.total_injection</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21"><code class="docutils literal notranslate"><span class="pre">VectorField.ur</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id22"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkx_modes_t</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id23"><code class="docutils literal notranslate"><span class="pre">VectorField.Vky_modes_t</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id24"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkz_modes_t</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id25"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkx_mode</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id26"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkz_mode</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id27"><code class="docutils literal notranslate"><span class="pre">VectorField.Vky_mode</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.set_arrays"><code class="docutils literal notranslate"><span class="pre">VectorField.set_arrays()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.init_cond"><code class="docutils literal notranslate"><span class="pre">VectorField.init_cond()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.init_cond_real"><code class="docutils literal notranslate"><span class="pre">VectorField.init_cond_real()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_omega"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_omega()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_vecpot"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_vecpot()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.update2D_Vkz"><code class="docutils literal notranslate"><span class="pre">VectorField.update2D_Vkz()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.update3D_Vkz"><code class="docutils literal notranslate"><span class="pre">VectorField.update3D_Vkz()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_divergence"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_divergence()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_total_energy"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_total_energy()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_total_energy_w"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_total_energy_w()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_total_injection"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_total_injection()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_dissipation"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_dissipation()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_dissipation_alter"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_dissipation_alter()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_ekTk"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_ekTk()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_ekTk_w"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_ekTk_w()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.U_to_Ucopy"><code class="docutils literal notranslate"><span class="pre">VectorField.U_to_Ucopy()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Ucopy_to_U"><code class="docutils literal notranslate"><span class="pre">VectorField.Ucopy_to_U()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.B_to_Bcopy"><code class="docutils literal notranslate"><span class="pre">VectorField.B_to_Bcopy()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Bcopy_to_B"><code class="docutils literal notranslate"><span class="pre">VectorField.Bcopy_to_B()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="module-TARANG.lib.fields.vect_field">
+<span id="tarang-lib-fields-vect-field"></span><h1>TARANG.lib.fields.vect_field<a class="headerlink" href="#module-TARANG.lib.fields.vect_field" title="Link to this heading">#</a></h1>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.fields.vect_field.VectorField" title="TARANG.lib.fields.vect_field.VectorField"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VectorField</span></code></a></p></td>
+<td><p>Class representing a vector field for the TARANG solver.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">TARANG.lib.fields.vect_field.</span></span><span class="sig-name descname"><span class="pre">VectorField</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">para</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField" title="Link to this definition">#</a></dt>
+<dd><p>Class representing a vector field for the TARANG solver.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.Vkx">
+<span class="sig-name descname"><span class="pre">Vkx</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.Vkx" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the Fourier components of the vector field in the x direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.Vky">
+<span class="sig-name descname"><span class="pre">Vky</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.Vky" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the Fourier components of the vector field in the y direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.Vkz">
+<span class="sig-name descname"><span class="pre">Vkz</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.Vkz" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the Fourier components of the vector field in the z direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.Vx">
+<span class="sig-name descname"><span class="pre">Vx</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.Vx" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the real-space components of the vector field in the x direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.Vy">
+<span class="sig-name descname"><span class="pre">Vy</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.Vy" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the real-space components of the vector field in the y direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.Vz">
+<span class="sig-name descname"><span class="pre">Vz</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.Vz" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the real-space components of the vector field in the z direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.force_Vx">
+<span class="sig-name descname"><span class="pre">force_Vx</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.force_Vx" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the forcing components of the vector field in the x direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.force_Vy">
+<span class="sig-name descname"><span class="pre">force_Vy</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.force_Vy" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the forcing components of the vector field in the y direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.force_Vz">
+<span class="sig-name descname"><span class="pre">force_Vz</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.force_Vz" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the forcing components of the vector field in the z direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.nlinx">
+<span class="sig-name descname"><span class="pre">nlinx</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.nlinx" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the nonlinear components of the vector field in the x direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.nliny">
+<span class="sig-name descname"><span class="pre">nliny</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.nliny" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the nonlinear components of the vector field in the y direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.nlinz">
+<span class="sig-name descname"><span class="pre">nlinz</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.nlinz" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the nonlinear components of the vector field in the z direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.ek">
+<span class="sig-name descname"><span class="pre">ek</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.ek" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the energy spectra.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.Tk">
+<span class="sig-name descname"><span class="pre">Tk</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.Tk" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the transfer spectra.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.ek_table">
+<span class="sig-name descname"><span class="pre">ek_table</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.ek_table" title="Link to this definition">#</a></dt>
+<dd><p>Tables for the energy spectra.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.Tk_table">
+<span class="sig-name descname"><span class="pre">Tk_table</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.Tk_table" title="Link to this definition">#</a></dt>
+<dd><p>Tables for the transfer spectra.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.total_energy">
+<span class="sig-name descname"><span class="pre">total_energy</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.total_energy" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for total energy.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.total_dissipation">
+<span class="sig-name descname"><span class="pre">total_dissipation</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.total_dissipation" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for total dissipation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.standard_dissipation">
+<span class="sig-name descname"><span class="pre">standard_dissipation</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.standard_dissipation" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for standard dissipation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.hypo_dissipation">
+<span class="sig-name descname"><span class="pre">hypo_dissipation</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.hypo_dissipation" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for hypo dissipation (if enabled).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.hyper_dissipation">
+<span class="sig-name descname"><span class="pre">hyper_dissipation</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.hyper_dissipation" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for hyper dissipation (if enabled).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.divergence">
+<span class="sig-name descname"><span class="pre">divergence</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.divergence" title="Link to this definition">#</a></dt>
+<dd><p>Array for the divergence of the vector field.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.total_injection">
+<span class="sig-name descname"><span class="pre">total_injection</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.total_injection" title="Link to this definition">#</a></dt>
+<dd><p>Array for the total energy injection.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.ur">
+<span class="sig-name descname"><span class="pre">ur</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.ur" title="Link to this definition">#</a></dt>
+<dd><p>Array for the velocity components.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.Vkx_modes_t">
+<span class="sig-name descname"><span class="pre">Vkx_modes_t</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.Vkx_modes_t" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the time evolution of the Fourier modes in the x direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.Vky_modes_t">
+<span class="sig-name descname"><span class="pre">Vky_modes_t</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.Vky_modes_t" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the time evolution of the Fourier modes in the y direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.Vkz_modes_t">
+<span class="sig-name descname"><span class="pre">Vkz_modes_t</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.Vkz_modes_t" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the time evolution of the Fourier modes in the z direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.Vkx_mode">
+<span class="sig-name descname"><span class="pre">Vkx_mode</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.Vkx_mode" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the Fourier modes in the x direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.Vky_mode">
+<span class="sig-name descname"><span class="pre">Vky_mode</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.Vky_mode" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the Fourier modes in the y direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.Vkz_mode">
+<span class="sig-name descname"><span class="pre">Vkz_mode</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.Vkz_mode" title="Link to this definition">#</a></dt>
+<dd><p>Arrays for the Fourier modes in the z direction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>array-like</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.para">
+<span class="sig-name descname"><span class="pre">para</span></span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.para" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">Vkx</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id0" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id1">
+<span class="sig-name descname"><span class="pre">Vky</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id1" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id2">
+<span class="sig-name descname"><span class="pre">Vkz</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id2" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id3">
+<span class="sig-name descname"><span class="pre">Vx</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id3" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id4">
+<span class="sig-name descname"><span class="pre">Vy</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id4" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id5">
+<span class="sig-name descname"><span class="pre">Vz</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id5" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id6">
+<span class="sig-name descname"><span class="pre">force_Vx</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id6" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id7">
+<span class="sig-name descname"><span class="pre">force_Vy</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id7" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id8">
+<span class="sig-name descname"><span class="pre">force_Vz</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id8" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id9">
+<span class="sig-name descname"><span class="pre">nlinx</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id9" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id10">
+<span class="sig-name descname"><span class="pre">nliny</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id10" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id11">
+<span class="sig-name descname"><span class="pre">nlinz</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id11" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id12">
+<span class="sig-name descname"><span class="pre">ek</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id12" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id13">
+<span class="sig-name descname"><span class="pre">Tk</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id13" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id14">
+<span class="sig-name descname"><span class="pre">ek_table</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id14" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id15">
+<span class="sig-name descname"><span class="pre">Tk_table</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id15" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id16">
+<span class="sig-name descname"><span class="pre">total_energy</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id16" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id17">
+<span class="sig-name descname"><span class="pre">total_dissipation</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id17" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id18">
+<span class="sig-name descname"><span class="pre">standard_dissipation</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id18" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id19">
+<span class="sig-name descname"><span class="pre">divergence</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id19" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id20">
+<span class="sig-name descname"><span class="pre">total_injection</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id20" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id21">
+<span class="sig-name descname"><span class="pre">ur</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id21" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id22">
+<span class="sig-name descname"><span class="pre">Vkx_modes_t</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id22" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id23">
+<span class="sig-name descname"><span class="pre">Vky_modes_t</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id23" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id24">
+<span class="sig-name descname"><span class="pre">Vkz_modes_t</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id24" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id25">
+<span class="sig-name descname"><span class="pre">Vkx_mode</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id25" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id26">
+<span class="sig-name descname"><span class="pre">Vkz_mode</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id26" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id27">
+<span class="sig-name descname"><span class="pre">Vky_mode</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id27" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.set_arrays">
+<span class="sig-name descname"><span class="pre">set_arrays</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.set_arrays" title="Link to this definition">#</a></dt>
+<dd><p>Set the arrays for the vector field based on the simulation parameters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.init_cond">
+<span class="sig-name descname"><span class="pre">init_cond</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Vkx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Vky</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Vkz</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.init_cond" title="Link to this definition">#</a></dt>
+<dd><p>Initialize the vector field with given Fourier components.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Vkx</strong> (<em>array-like</em>) – Arrays for the Fourier components of the vector field in the x direction.</p></li>
+<li><p><strong>Vky</strong> (<em>array-like</em>) – Arrays for the Fourier components of the vector field in the y direction.</p></li>
+<li><p><strong>Vkz</strong> (<em>array-like</em>) – Arrays for the Fourier components of the vector field in the z direction.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.init_cond_real">
+<span class="sig-name descname"><span class="pre">init_cond_real</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Vx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Vy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Vz</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.init_cond_real" title="Link to this definition">#</a></dt>
+<dd><p>Initialize the vector field with given Real components.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Vx</strong> (<em>array-like</em>) – Arrays for the Real components of the vector field in the x direction.</p></li>
+<li><p><strong>Vy</strong> (<em>array-like</em>) – Arrays for the Real components of the vector field in the y direction.</p></li>
+<li><p><strong>Vz</strong> (<em>array-like</em>) – Arrays for the Real components of the vector field in the z direction.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.compute_omega">
+<span class="sig-name descname"><span class="pre">compute_omega</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.compute_omega" title="Link to this definition">#</a></dt>
+<dd><p>Initialize the derived field with the vorticity components from the velocity field.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.compute_vecpot">
+<span class="sig-name descname"><span class="pre">compute_vecpot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.compute_vecpot" title="Link to this definition">#</a></dt>
+<dd><p>Initialize the derived field with the vector potential components from the magnetic field.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.update2D_Vkz">
+<span class="sig-name descname"><span class="pre">update2D_Vkz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kz</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.update2D_Vkz" title="Link to this definition">#</a></dt>
+<dd><p>Update the Vkz component for 2D simulations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>kx</strong> (<em>int</em>) – Wavenumber in the x direction.</p></li>
+<li><p><strong>kz</strong> (<em>int</em>) – Wavenumber in the z direction.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.update3D_Vkz">
+<span class="sig-name descname"><span class="pre">update3D_Vkz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ky</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kz</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.update3D_Vkz" title="Link to this definition">#</a></dt>
+<dd><p>Update the Vkz component for 3D simulations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>kx</strong> (<em>int</em>) – Wavenumber in the x direction.</p></li>
+<li><p><strong>ky</strong> (<em>int</em>) – Wavenumber in the y direction.</p></li>
+<li><p><strong>kz</strong> (<em>int</em>) – Wavenumber in the z direction.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.compute_divergence">
+<span class="sig-name descname"><span class="pre">compute_divergence</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.compute_divergence" title="Link to this definition">#</a></dt>
+<dd><p>Compute the divergence of the vector field.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Maximum absolute value of the divergence.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.compute_total_energy">
+<span class="sig-name descname"><span class="pre">compute_total_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.compute_total_energy" title="Link to this definition">#</a></dt>
+<dd><p>Compute the total energy of the vector field.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Total energy of the vector field.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.compute_total_energy_w">
+<span class="sig-name descname"><span class="pre">compute_total_energy_w</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.compute_total_energy_w" title="Link to this definition">#</a></dt>
+<dd><p>Compute the total energy of the vector field.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Total energy of the vector field.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.compute_total_injection">
+<span class="sig-name descname"><span class="pre">compute_total_injection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.compute_total_injection" title="Link to this definition">#</a></dt>
+<dd><p>Compute the total energy injection of the vector field.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Total energy injection of the vector field.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.compute_dissipation">
+<span class="sig-name descname"><span class="pre">compute_dissipation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.compute_dissipation" title="Link to this definition">#</a></dt>
+<dd><p>Compute the dissipation of the vector field.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dissipation of the vector field.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.compute_dissipation_alter">
+<span class="sig-name descname"><span class="pre">compute_dissipation_alter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">power</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.compute_dissipation_alter" title="Link to this definition">#</a></dt>
+<dd><p>Compute the alternative dissipation of the vector field.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>power</strong> (<em>int</em>) – Power to which the wavenumber is raised.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Alternative dissipation of the vector field.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.compute_ekTk">
+<span class="sig-name descname"><span class="pre">compute_ekTk</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">univ</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.compute_ekTk" title="Link to this definition">#</a></dt>
+<dd><p>Compute the energy spectrum and transfer function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>univ</strong> (<a class="reference internal" href="../../global_fns/universal/index.html#TARANG.lib.global_fns.universal.UniversalArrays" title="TARANG.lib.global_fns.universal.UniversalArrays"><em>UniversalArrays</em></a><em>, </em><em>optional</em>) – UniversalArrays object for temporary storage.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.compute_ekTk_w">
+<span class="sig-name descname"><span class="pre">compute_ekTk_w</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">univ</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.compute_ekTk_w" title="Link to this definition">#</a></dt>
+<dd><p>Compute the energy spectrum and transfer function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>univ</strong> (<a class="reference internal" href="../../global_fns/universal/index.html#TARANG.lib.global_fns.universal.UniversalArrays" title="TARANG.lib.global_fns.universal.UniversalArrays"><em>UniversalArrays</em></a><em>, </em><em>optional</em>) – UniversalArrays object for temporary storage.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.U_to_Ucopy">
+<span class="sig-name descname"><span class="pre">U_to_Ucopy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">univ</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.U_to_Ucopy" title="Link to this definition">#</a></dt>
+<dd><p>Copy the vector field to the universal arrays.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>univ</strong> (<a class="reference internal" href="../../global_fns/universal/index.html#TARANG.lib.global_fns.universal.UniversalArrays" title="TARANG.lib.global_fns.universal.UniversalArrays"><em>UniversalArrays</em></a><em>, </em><em>optional</em>) – UniversalArrays object for temporary storage.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.Ucopy_to_U">
+<span class="sig-name descname"><span class="pre">Ucopy_to_U</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">univ</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.Ucopy_to_U" title="Link to this definition">#</a></dt>
+<dd><p>Copy the universal arrays to the vector field.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>univ</strong> (<a class="reference internal" href="../../global_fns/universal/index.html#TARANG.lib.global_fns.universal.UniversalArrays" title="TARANG.lib.global_fns.universal.UniversalArrays"><em>UniversalArrays</em></a><em>, </em><em>optional</em>) – UniversalArrays object for temporary storage.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.B_to_Bcopy">
+<span class="sig-name descname"><span class="pre">B_to_Bcopy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">univ</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.B_to_Bcopy" title="Link to this definition">#</a></dt>
+<dd><p>Copy the magnetic field to the universal arrays.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>univ</strong> (<a class="reference internal" href="../../global_fns/universal/index.html#TARANG.lib.global_fns.universal.UniversalArrays" title="TARANG.lib.global_fns.universal.UniversalArrays"><em>UniversalArrays</em></a><em>, </em><em>optional</em>) – UniversalArrays object for temporary storage.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="TARANG.lib.fields.vect_field.VectorField.Bcopy_to_B">
+<span class="sig-name descname"><span class="pre">Bcopy_to_B</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">univ</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#TARANG.lib.fields.vect_field.VectorField.Bcopy_to_B" title="Link to this definition">#</a></dt>
+<dd><p>Copy the universal arrays to the magnetic field.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>univ</strong> (<a class="reference internal" href="../../global_fns/universal/index.html#TARANG.lib.global_fns.universal.UniversalArrays" title="TARANG.lib.global_fns.universal.UniversalArrays"><em>UniversalArrays</em></a><em>, </em><em>optional</em>) – UniversalArrays object for temporary storage.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField"><code class="docutils literal notranslate"><span class="pre">VectorField</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vkx"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vky"><code class="docutils literal notranslate"><span class="pre">VectorField.Vky</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vkz"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vx"><code class="docutils literal notranslate"><span class="pre">VectorField.Vx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vy"><code class="docutils literal notranslate"><span class="pre">VectorField.Vy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vz"><code class="docutils literal notranslate"><span class="pre">VectorField.Vz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.force_Vx"><code class="docutils literal notranslate"><span class="pre">VectorField.force_Vx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.force_Vy"><code class="docutils literal notranslate"><span class="pre">VectorField.force_Vy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.force_Vz"><code class="docutils literal notranslate"><span class="pre">VectorField.force_Vz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.nlinx"><code class="docutils literal notranslate"><span class="pre">VectorField.nlinx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.nliny"><code class="docutils literal notranslate"><span class="pre">VectorField.nliny</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.nlinz"><code class="docutils literal notranslate"><span class="pre">VectorField.nlinz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.ek"><code class="docutils literal notranslate"><span class="pre">VectorField.ek</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Tk"><code class="docutils literal notranslate"><span class="pre">VectorField.Tk</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.ek_table"><code class="docutils literal notranslate"><span class="pre">VectorField.ek_table</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Tk_table"><code class="docutils literal notranslate"><span class="pre">VectorField.Tk_table</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.total_energy"><code class="docutils literal notranslate"><span class="pre">VectorField.total_energy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.total_dissipation"><code class="docutils literal notranslate"><span class="pre">VectorField.total_dissipation</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.standard_dissipation"><code class="docutils literal notranslate"><span class="pre">VectorField.standard_dissipation</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.hypo_dissipation"><code class="docutils literal notranslate"><span class="pre">VectorField.hypo_dissipation</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.hyper_dissipation"><code class="docutils literal notranslate"><span class="pre">VectorField.hyper_dissipation</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.divergence"><code class="docutils literal notranslate"><span class="pre">VectorField.divergence</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.total_injection"><code class="docutils literal notranslate"><span class="pre">VectorField.total_injection</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.ur"><code class="docutils literal notranslate"><span class="pre">VectorField.ur</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vkx_modes_t"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkx_modes_t</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vky_modes_t"><code class="docutils literal notranslate"><span class="pre">VectorField.Vky_modes_t</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vkz_modes_t"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkz_modes_t</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vkx_mode"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkx_mode</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vky_mode"><code class="docutils literal notranslate"><span class="pre">VectorField.Vky_mode</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Vkz_mode"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkz_mode</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.para"><code class="docutils literal notranslate"><span class="pre">VectorField.para</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id0"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><code class="docutils literal notranslate"><span class="pre">VectorField.Vky</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"><code class="docutils literal notranslate"><span class="pre">VectorField.Vx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"><code class="docutils literal notranslate"><span class="pre">VectorField.Vy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5"><code class="docutils literal notranslate"><span class="pre">VectorField.Vz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6"><code class="docutils literal notranslate"><span class="pre">VectorField.force_Vx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7"><code class="docutils literal notranslate"><span class="pre">VectorField.force_Vy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8"><code class="docutils literal notranslate"><span class="pre">VectorField.force_Vz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9"><code class="docutils literal notranslate"><span class="pre">VectorField.nlinx</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10"><code class="docutils literal notranslate"><span class="pre">VectorField.nliny</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11"><code class="docutils literal notranslate"><span class="pre">VectorField.nlinz</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12"><code class="docutils literal notranslate"><span class="pre">VectorField.ek</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id13"><code class="docutils literal notranslate"><span class="pre">VectorField.Tk</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id14"><code class="docutils literal notranslate"><span class="pre">VectorField.ek_table</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15"><code class="docutils literal notranslate"><span class="pre">VectorField.Tk_table</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16"><code class="docutils literal notranslate"><span class="pre">VectorField.total_energy</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17"><code class="docutils literal notranslate"><span class="pre">VectorField.total_dissipation</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18"><code class="docutils literal notranslate"><span class="pre">VectorField.standard_dissipation</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19"><code class="docutils literal notranslate"><span class="pre">VectorField.divergence</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20"><code class="docutils literal notranslate"><span class="pre">VectorField.total_injection</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21"><code class="docutils literal notranslate"><span class="pre">VectorField.ur</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id22"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkx_modes_t</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id23"><code class="docutils literal notranslate"><span class="pre">VectorField.Vky_modes_t</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id24"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkz_modes_t</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id25"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkx_mode</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id26"><code class="docutils literal notranslate"><span class="pre">VectorField.Vkz_mode</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id27"><code class="docutils literal notranslate"><span class="pre">VectorField.Vky_mode</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.set_arrays"><code class="docutils literal notranslate"><span class="pre">VectorField.set_arrays()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.init_cond"><code class="docutils literal notranslate"><span class="pre">VectorField.init_cond()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.init_cond_real"><code class="docutils literal notranslate"><span class="pre">VectorField.init_cond_real()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_omega"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_omega()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_vecpot"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_vecpot()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.update2D_Vkz"><code class="docutils literal notranslate"><span class="pre">VectorField.update2D_Vkz()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.update3D_Vkz"><code class="docutils literal notranslate"><span class="pre">VectorField.update3D_Vkz()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_divergence"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_divergence()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_total_energy"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_total_energy()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_total_energy_w"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_total_energy_w()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_total_injection"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_total_injection()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_dissipation"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_dissipation()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_dissipation_alter"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_dissipation_alter()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_ekTk"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_ekTk()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.compute_ekTk_w"><code class="docutils literal notranslate"><span class="pre">VectorField.compute_ekTk_w()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.U_to_Ucopy"><code class="docutils literal notranslate"><span class="pre">VectorField.U_to_Ucopy()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Ucopy_to_U"><code class="docutils literal notranslate"><span class="pre">VectorField.Ucopy_to_U()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.B_to_Bcopy"><code class="docutils literal notranslate"><span class="pre">VectorField.B_to_Bcopy()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.fields.vect_field.VectorField.Bcopy_to_B"><code class="docutils literal notranslate"><span class="pre">VectorField.Bcopy_to_B()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Mahendra Verma, Shashwat Nirgudkar, Abhay Kumar
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
