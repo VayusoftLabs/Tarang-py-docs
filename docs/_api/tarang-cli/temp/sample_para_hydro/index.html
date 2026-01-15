@@ -1,0 +1,1151 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>tarang-cli.temp.sample_para_hydro &#8212; Tarang  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css?v=4ae1632d" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_api/tarang-cli/temp/sample_para_hydro/index';</script>
+    <script src="../../../../_static/custom.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Tarang  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../pages/getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../pages/getting_started/usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../pages/getting_started/initconds.html">Defining Initial Conditions</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Test Cases</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../pages/test_cases/3d_hydro.html">3D Hydrodynamics - Taylor Green Vortex</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../pages/test_cases/2d_hydro.html">2D Hydrodynamics - Pair of Vortices</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../index.html">API Reference</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../py-modindex.html">Module Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../genindex.html">Index</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../../_sources/_api/tarang-cli/temp/sample_para_hydro/index.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>tarang-cli.temp.sample_para_hydro</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes">Attributes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.device"><code class="docutils literal notranslate"><span class="pre">device</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.device_rank"><code class="docutils literal notranslate"><span class="pre">device_rank</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.complex_dtype"><code class="docutils literal notranslate"><span class="pre">complex_dtype</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.real_dtype"><code class="docutils literal notranslate"><span class="pre">real_dtype</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.kind"><code class="docutils literal notranslate"><span class="pre">kind</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.para_dir"><code class="docutils literal notranslate"><span class="pre">para_dir</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.INPUT_SET_CASE"><code class="docutils literal notranslate"><span class="pre">INPUT_SET_CASE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.input_case"><code class="docutils literal notranslate"><span class="pre">input_case</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.INPUT_REAL_FIELD"><code class="docutils literal notranslate"><span class="pre">INPUT_REAL_FIELD</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.OUTPUT_REAL_FIELD"><code class="docutils literal notranslate"><span class="pre">OUTPUT_REAL_FIELD</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.INPUT_FROM_FILE"><code class="docutils literal notranslate"><span class="pre">INPUT_FROM_FILE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.input_file_name"><code class="docutils literal notranslate"><span class="pre">input_file_name</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.input_dir"><code class="docutils literal notranslate"><span class="pre">input_dir</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.output_dir"><code class="docutils literal notranslate"><span class="pre">output_dir</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.dimension"><code class="docutils literal notranslate"><span class="pre">dimension</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.Nx"><code class="docutils literal notranslate"><span class="pre">Nx</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.Ny"><code class="docutils literal notranslate"><span class="pre">Ny</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.Nz"><code class="docutils literal notranslate"><span class="pre">Nz</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id0"><code class="docutils literal notranslate"><span class="pre">Ny</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.L"><code class="docutils literal notranslate"><span class="pre">L</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.BOX_SIZE_DEFAULT"><code class="docutils literal notranslate"><span class="pre">BOX_SIZE_DEFAULT</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><code class="docutils literal notranslate"><span class="pre">L</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.Rac"><code class="docutils literal notranslate"><span class="pre">Rac</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.Ra"><code class="docutils literal notranslate"><span class="pre">Ra</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.Pr"><code class="docutils literal notranslate"><span class="pre">Pr</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.kappa"><code class="docutils literal notranslate"><span class="pre">kappa</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.nu"><code class="docutils literal notranslate"><span class="pre">nu</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.HYPO_DISSIPATION"><code class="docutils literal notranslate"><span class="pre">HYPO_DISSIPATION</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.HYPER_DISSIPATION"><code class="docutils literal notranslate"><span class="pre">HYPER_DISSIPATION</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.nu_hypo"><code class="docutils literal notranslate"><span class="pre">nu_hypo</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.nu_hypo_power"><code class="docutils literal notranslate"><span class="pre">nu_hypo_power</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.nu_hypo_cutoff"><code class="docutils literal notranslate"><span class="pre">nu_hypo_cutoff</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.nu_hyper"><code class="docutils literal notranslate"><span class="pre">nu_hyper</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.nu_hyper_power"><code class="docutils literal notranslate"><span class="pre">nu_hyper_power</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.FORCING_ENABLED"><code class="docutils literal notranslate"><span class="pre">FORCING_ENABLED</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.FORCING_SCHEME"><code class="docutils literal notranslate"><span class="pre">FORCING_SCHEME</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.forcing_range"><code class="docutils literal notranslate"><span class="pre">forcing_range</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.injection_u"><code class="docutils literal notranslate"><span class="pre">injection_u</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.injection_h"><code class="docutils literal notranslate"><span class="pre">injection_h</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.ROTATION_ENABLED"><code class="docutils literal notranslate"><span class="pre">ROTATION_ENABLED</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.Omega"><code class="docutils literal notranslate"><span class="pre">Omega</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.MAINTAIN_FIELD"><code class="docutils literal notranslate"><span class="pre">MAINTAIN_FIELD</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.maintain_mux"><code class="docutils literal notranslate"><span class="pre">maintain_mux</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.time_scheme"><code class="docutils literal notranslate"><span class="pre">time_scheme</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.t_initial"><code class="docutils literal notranslate"><span class="pre">t_initial</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.t_final"><code class="docutils literal notranslate"><span class="pre">t_final</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.dt"><code class="docutils literal notranslate"><span class="pre">dt</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.FIXED_DT"><code class="docutils literal notranslate"><span class="pre">FIXED_DT</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.Courant_no"><code class="docutils literal notranslate"><span class="pre">Courant_no</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.t_eps"><code class="docutils literal notranslate"><span class="pre">t_eps</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.PRINT_PARAMETERS"><code class="docutils literal notranslate"><span class="pre">PRINT_PARAMETERS</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.RUNTIME_SAVE"><code class="docutils literal notranslate"><span class="pre">RUNTIME_SAVE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.LIVE_PLOT"><code class="docutils literal notranslate"><span class="pre">LIVE_PLOT</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.USE_BINDING"><code class="docutils literal notranslate"><span class="pre">USE_BINDING</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.PLANAR_SPECTRA"><code class="docutils literal notranslate"><span class="pre">PLANAR_SPECTRA</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.SAVE_VORTICITY"><code class="docutils literal notranslate"><span class="pre">SAVE_VORTICITY</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.SAVE_VECPOT"><code class="docutils literal notranslate"><span class="pre">SAVE_VECPOT</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.modes_save"><code class="docutils literal notranslate"><span class="pre">modes_save</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_field_save_start"><code class="docutils literal notranslate"><span class="pre">iter_field_save_start</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_field_save_inter"><code class="docutils literal notranslate"><span class="pre">iter_field_save_inter</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_field_save_buffer"><code class="docutils literal notranslate"><span class="pre">iter_field_save_buffer</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_glob_energy_print_start"><code class="docutils literal notranslate"><span class="pre">iter_glob_energy_print_start</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_glob_energy_print_inter"><code class="docutils literal notranslate"><span class="pre">iter_glob_energy_print_inter</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_glob_save_buffer"><code class="docutils literal notranslate"><span class="pre">iter_glob_save_buffer</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_ekTk_save_start"><code class="docutils literal notranslate"><span class="pre">iter_ekTk_save_start</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_ekTk_save_inter"><code class="docutils literal notranslate"><span class="pre">iter_ekTk_save_inter</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_ekTk_save_buffer"><code class="docutils literal notranslate"><span class="pre">iter_ekTk_save_buffer</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_modes_save_start"><code class="docutils literal notranslate"><span class="pre">iter_modes_save_start</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_modes_save_inter"><code class="docutils literal notranslate"><span class="pre">iter_modes_save_inter</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_modes_save_buffer"><code class="docutils literal notranslate"><span class="pre">iter_modes_save_buffer</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.VALIDATE_SOLVER"><code class="docutils literal notranslate"><span class="pre">VALIDATE_SOLVER</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.injections"><code class="docutils literal notranslate"><span class="pre">injections</span></code></a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="module-tarang-cli.temp.sample_para_hydro">
+<span id="tarang-cli-temp-sample-para-hydro"></span><h1>tarang-cli.temp.sample_para_hydro<a class="headerlink" href="#module-tarang-cli.temp.sample_para_hydro" title="Link to this heading">#</a></h1>
+<p>This script sets up and configures the parameters for running various types of simulations (e.g., hydrodynamic, magnetohydrodynamic, scalar) on either CPU or GPU.</p>
+<section id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.device" title="tarang-cli.temp.sample_para_hydro.device"><code class="xref py py-obj docutils literal notranslate"><span class="pre">device</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.device_rank" title="tarang-cli.temp.sample_para_hydro.device_rank"><code class="xref py py-obj docutils literal notranslate"><span class="pre">device_rank</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.complex_dtype" title="tarang-cli.temp.sample_para_hydro.complex_dtype"><code class="xref py py-obj docutils literal notranslate"><span class="pre">complex_dtype</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.real_dtype" title="tarang-cli.temp.sample_para_hydro.real_dtype"><code class="xref py py-obj docutils literal notranslate"><span class="pre">real_dtype</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.kind" title="tarang-cli.temp.sample_para_hydro.kind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kind</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.para_dir" title="tarang-cli.temp.sample_para_hydro.para_dir"><code class="xref py py-obj docutils literal notranslate"><span class="pre">para_dir</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.INPUT_SET_CASE" title="tarang-cli.temp.sample_para_hydro.INPUT_SET_CASE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">INPUT_SET_CASE</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.input_case" title="tarang-cli.temp.sample_para_hydro.input_case"><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_case</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.INPUT_REAL_FIELD" title="tarang-cli.temp.sample_para_hydro.INPUT_REAL_FIELD"><code class="xref py py-obj docutils literal notranslate"><span class="pre">INPUT_REAL_FIELD</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.OUTPUT_REAL_FIELD" title="tarang-cli.temp.sample_para_hydro.OUTPUT_REAL_FIELD"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OUTPUT_REAL_FIELD</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.INPUT_FROM_FILE" title="tarang-cli.temp.sample_para_hydro.INPUT_FROM_FILE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">INPUT_FROM_FILE</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.input_file_name" title="tarang-cli.temp.sample_para_hydro.input_file_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_file_name</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.input_dir" title="tarang-cli.temp.sample_para_hydro.input_dir"><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_dir</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.output_dir" title="tarang-cli.temp.sample_para_hydro.output_dir"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_dir</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.dimension" title="tarang-cli.temp.sample_para_hydro.dimension"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dimension</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.Nx" title="tarang-cli.temp.sample_para_hydro.Nx"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Nx</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#id0" title="tarang-cli.temp.sample_para_hydro.Ny"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Ny</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.Nz" title="tarang-cli.temp.sample_para_hydro.Nz"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Nz</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#id0" title="tarang-cli.temp.sample_para_hydro.Ny"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Ny</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#id1" title="tarang-cli.temp.sample_para_hydro.L"><code class="xref py py-obj docutils literal notranslate"><span class="pre">L</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.BOX_SIZE_DEFAULT" title="tarang-cli.temp.sample_para_hydro.BOX_SIZE_DEFAULT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BOX_SIZE_DEFAULT</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#id1" title="tarang-cli.temp.sample_para_hydro.L"><code class="xref py py-obj docutils literal notranslate"><span class="pre">L</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.Rac" title="tarang-cli.temp.sample_para_hydro.Rac"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Rac</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.Ra" title="tarang-cli.temp.sample_para_hydro.Ra"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Ra</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.Pr" title="tarang-cli.temp.sample_para_hydro.Pr"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Pr</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.kappa" title="tarang-cli.temp.sample_para_hydro.kappa"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kappa</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.nu" title="tarang-cli.temp.sample_para_hydro.nu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nu</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.HYPO_DISSIPATION" title="tarang-cli.temp.sample_para_hydro.HYPO_DISSIPATION"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HYPO_DISSIPATION</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.HYPER_DISSIPATION" title="tarang-cli.temp.sample_para_hydro.HYPER_DISSIPATION"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HYPER_DISSIPATION</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.nu_hypo" title="tarang-cli.temp.sample_para_hydro.nu_hypo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nu_hypo</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.nu_hypo_power" title="tarang-cli.temp.sample_para_hydro.nu_hypo_power"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nu_hypo_power</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.nu_hypo_cutoff" title="tarang-cli.temp.sample_para_hydro.nu_hypo_cutoff"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nu_hypo_cutoff</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.nu_hyper" title="tarang-cli.temp.sample_para_hydro.nu_hyper"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nu_hyper</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.nu_hyper_power" title="tarang-cli.temp.sample_para_hydro.nu_hyper_power"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nu_hyper_power</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.FORCING_ENABLED" title="tarang-cli.temp.sample_para_hydro.FORCING_ENABLED"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FORCING_ENABLED</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.FORCING_SCHEME" title="tarang-cli.temp.sample_para_hydro.FORCING_SCHEME"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FORCING_SCHEME</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.forcing_range" title="tarang-cli.temp.sample_para_hydro.forcing_range"><code class="xref py py-obj docutils literal notranslate"><span class="pre">forcing_range</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.injection_u" title="tarang-cli.temp.sample_para_hydro.injection_u"><code class="xref py py-obj docutils literal notranslate"><span class="pre">injection_u</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.injection_h" title="tarang-cli.temp.sample_para_hydro.injection_h"><code class="xref py py-obj docutils literal notranslate"><span class="pre">injection_h</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.ROTATION_ENABLED" title="tarang-cli.temp.sample_para_hydro.ROTATION_ENABLED"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ROTATION_ENABLED</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.Omega" title="tarang-cli.temp.sample_para_hydro.Omega"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Omega</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.MAINTAIN_FIELD" title="tarang-cli.temp.sample_para_hydro.MAINTAIN_FIELD"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MAINTAIN_FIELD</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.maintain_mux" title="tarang-cli.temp.sample_para_hydro.maintain_mux"><code class="xref py py-obj docutils literal notranslate"><span class="pre">maintain_mux</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.time_scheme" title="tarang-cli.temp.sample_para_hydro.time_scheme"><code class="xref py py-obj docutils literal notranslate"><span class="pre">time_scheme</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.t_initial" title="tarang-cli.temp.sample_para_hydro.t_initial"><code class="xref py py-obj docutils literal notranslate"><span class="pre">t_initial</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.t_final" title="tarang-cli.temp.sample_para_hydro.t_final"><code class="xref py py-obj docutils literal notranslate"><span class="pre">t_final</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.dt" title="tarang-cli.temp.sample_para_hydro.dt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dt</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.FIXED_DT" title="tarang-cli.temp.sample_para_hydro.FIXED_DT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FIXED_DT</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.Courant_no" title="tarang-cli.temp.sample_para_hydro.Courant_no"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Courant_no</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.t_eps" title="tarang-cli.temp.sample_para_hydro.t_eps"><code class="xref py py-obj docutils literal notranslate"><span class="pre">t_eps</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.PRINT_PARAMETERS" title="tarang-cli.temp.sample_para_hydro.PRINT_PARAMETERS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PRINT_PARAMETERS</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.RUNTIME_SAVE" title="tarang-cli.temp.sample_para_hydro.RUNTIME_SAVE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RUNTIME_SAVE</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.LIVE_PLOT" title="tarang-cli.temp.sample_para_hydro.LIVE_PLOT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LIVE_PLOT</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.USE_BINDING" title="tarang-cli.temp.sample_para_hydro.USE_BINDING"><code class="xref py py-obj docutils literal notranslate"><span class="pre">USE_BINDING</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.PLANAR_SPECTRA" title="tarang-cli.temp.sample_para_hydro.PLANAR_SPECTRA"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PLANAR_SPECTRA</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.SAVE_VORTICITY" title="tarang-cli.temp.sample_para_hydro.SAVE_VORTICITY"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SAVE_VORTICITY</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.SAVE_VECPOT" title="tarang-cli.temp.sample_para_hydro.SAVE_VECPOT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SAVE_VECPOT</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.modes_save" title="tarang-cli.temp.sample_para_hydro.modes_save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">modes_save</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.iter_field_save_start" title="tarang-cli.temp.sample_para_hydro.iter_field_save_start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_field_save_start</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.iter_field_save_inter" title="tarang-cli.temp.sample_para_hydro.iter_field_save_inter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_field_save_inter</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.iter_field_save_buffer" title="tarang-cli.temp.sample_para_hydro.iter_field_save_buffer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_field_save_buffer</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.iter_glob_energy_print_start" title="tarang-cli.temp.sample_para_hydro.iter_glob_energy_print_start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_glob_energy_print_start</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.iter_glob_energy_print_inter" title="tarang-cli.temp.sample_para_hydro.iter_glob_energy_print_inter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_glob_energy_print_inter</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.iter_glob_save_buffer" title="tarang-cli.temp.sample_para_hydro.iter_glob_save_buffer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_glob_save_buffer</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.iter_ekTk_save_start" title="tarang-cli.temp.sample_para_hydro.iter_ekTk_save_start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_ekTk_save_start</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.iter_ekTk_save_inter" title="tarang-cli.temp.sample_para_hydro.iter_ekTk_save_inter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_ekTk_save_inter</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.iter_ekTk_save_buffer" title="tarang-cli.temp.sample_para_hydro.iter_ekTk_save_buffer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_ekTk_save_buffer</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.iter_modes_save_start" title="tarang-cli.temp.sample_para_hydro.iter_modes_save_start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_modes_save_start</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.iter_modes_save_inter" title="tarang-cli.temp.sample_para_hydro.iter_modes_save_inter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_modes_save_inter</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.iter_modes_save_buffer" title="tarang-cli.temp.sample_para_hydro.iter_modes_save_buffer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_modes_save_buffer</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.VALIDATE_SOLVER" title="tarang-cli.temp.sample_para_hydro.VALIDATE_SOLVER"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VALIDATE_SOLVER</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.temp.sample_para_hydro.injections" title="tarang-cli.temp.sample_para_hydro.injections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">injections</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">#</a></h2>
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.device">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">device</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'CPU'</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.device" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.device_rank">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">device_rank</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.device_rank" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.complex_dtype">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">complex_dtype</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'complex'</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.complex_dtype" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.real_dtype">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">real_dtype</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'float64'</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.real_dtype" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.kind">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">kind</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'HYDRO'</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.kind" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.para_dir">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">para_dir</span></span><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.para_dir" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.INPUT_SET_CASE">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">INPUT_SET_CASE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.INPUT_SET_CASE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.input_case">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">input_case</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'custom'</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.input_case" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.INPUT_REAL_FIELD">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">INPUT_REAL_FIELD</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.INPUT_REAL_FIELD" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.OUTPUT_REAL_FIELD">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">OUTPUT_REAL_FIELD</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.OUTPUT_REAL_FIELD" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.INPUT_FROM_FILE">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">INPUT_FROM_FILE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.INPUT_FROM_FILE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.input_file_name">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">input_file_name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'init_cond.h5'</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.input_file_name" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.input_dir">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">input_dir</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Uninferable/input'</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.input_dir" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.output_dir">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">output_dir</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Uninferable/output'</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.output_dir" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.dimension">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">dimension</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.dimension" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.Nx">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">Nx</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">128</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.Nx" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.Ny">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">Ny</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">128</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.Ny" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.Nz">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">Nz</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">128</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.Nz" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">Ny</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#id0" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.L">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">L</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[10,</span> <span class="pre">10,</span> <span class="pre">10]</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.L" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.BOX_SIZE_DEFAULT">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">BOX_SIZE_DEFAULT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.BOX_SIZE_DEFAULT" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="id1">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">L</span></span><a class="headerlink" href="#id1" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.Rac">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">Rac</span></span><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.Rac" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.Ra">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">Ra</span></span><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.Ra" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.Pr">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">Pr</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6.8</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.Pr" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.kappa">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">kappa</span></span><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.kappa" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.nu">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">nu</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.02</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.nu" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.HYPO_DISSIPATION">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">HYPO_DISSIPATION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.HYPO_DISSIPATION" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.HYPER_DISSIPATION">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">HYPER_DISSIPATION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.HYPER_DISSIPATION" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.nu_hypo">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">nu_hypo</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.nu_hypo" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.nu_hypo_power">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">nu_hypo_power</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">-2</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.nu_hypo_power" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.nu_hypo_cutoff">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">nu_hypo_cutoff</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">-1</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.nu_hypo_cutoff" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.nu_hyper">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">nu_hyper</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0001</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.nu_hyper" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.nu_hyper_power">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">nu_hyper_power</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.nu_hyper_power" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.FORCING_ENABLED">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">FORCING_ENABLED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.FORCING_ENABLED" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.FORCING_SCHEME">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">FORCING_SCHEME</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'random'</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.FORCING_SCHEME" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.forcing_range">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">forcing_range</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[2,</span> <span class="pre">3]</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.forcing_range" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.injection_u">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">injection_u</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.1</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.injection_u" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.injection_h">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">injection_h</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.01</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.injection_h" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.ROTATION_ENABLED">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">ROTATION_ENABLED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.ROTATION_ENABLED" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.Omega">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">Omega</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[0,</span> <span class="pre">0,</span> <span class="pre">0]</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.Omega" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.MAINTAIN_FIELD">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">MAINTAIN_FIELD</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.MAINTAIN_FIELD" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.maintain_mux">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">maintain_mux</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.maintain_mux" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.time_scheme">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">time_scheme</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'RK4'</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.time_scheme" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.t_initial">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">t_initial</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.t_initial" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.t_final">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">t_final</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.t_final" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.dt">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">dt</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.001</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.dt" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.FIXED_DT">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">FIXED_DT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.FIXED_DT" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.Courant_no">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">Courant_no</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.1</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.Courant_no" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.t_eps">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">t_eps</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1e-08</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.t_eps" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.PRINT_PARAMETERS">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">PRINT_PARAMETERS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.PRINT_PARAMETERS" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.RUNTIME_SAVE">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">RUNTIME_SAVE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.RUNTIME_SAVE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.LIVE_PLOT">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">LIVE_PLOT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.LIVE_PLOT" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.USE_BINDING">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">USE_BINDING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.USE_BINDING" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.PLANAR_SPECTRA">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">PLANAR_SPECTRA</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.PLANAR_SPECTRA" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.SAVE_VORTICITY">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">SAVE_VORTICITY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.SAVE_VORTICITY" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.SAVE_VECPOT">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">SAVE_VECPOT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.SAVE_VECPOT" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.modes_save">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">modes_save</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.modes_save" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.iter_field_save_start">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">iter_field_save_start</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.iter_field_save_start" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.iter_field_save_inter">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">iter_field_save_inter</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1000</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.iter_field_save_inter" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.iter_field_save_buffer">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">iter_field_save_buffer</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.iter_field_save_buffer" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.iter_glob_energy_print_start">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">iter_glob_energy_print_start</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.iter_glob_energy_print_start" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.iter_glob_energy_print_inter">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">iter_glob_energy_print_inter</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.iter_glob_energy_print_inter" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.iter_glob_save_buffer">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">iter_glob_save_buffer</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">100</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.iter_glob_save_buffer" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.iter_ekTk_save_start">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">iter_ekTk_save_start</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.iter_ekTk_save_start" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.iter_ekTk_save_inter">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">iter_ekTk_save_inter</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.iter_ekTk_save_inter" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.iter_ekTk_save_buffer">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">iter_ekTk_save_buffer</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">100</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.iter_ekTk_save_buffer" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.iter_modes_save_start">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">iter_modes_save_start</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.iter_modes_save_start" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.iter_modes_save_inter">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">iter_modes_save_inter</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">100</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.iter_modes_save_inter" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.iter_modes_save_buffer">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">iter_modes_save_buffer</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.iter_modes_save_buffer" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.VALIDATE_SOLVER">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">VALIDATE_SOLVER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.VALIDATE_SOLVER" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.temp.sample_para_hydro.injections">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.temp.sample_para_hydro.</span></span><span class="sig-name descname"><span class="pre">injections</span></span><a class="headerlink" href="#tarang-cli.temp.sample_para_hydro.injections" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes">Attributes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.device"><code class="docutils literal notranslate"><span class="pre">device</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.device_rank"><code class="docutils literal notranslate"><span class="pre">device_rank</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.complex_dtype"><code class="docutils literal notranslate"><span class="pre">complex_dtype</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.real_dtype"><code class="docutils literal notranslate"><span class="pre">real_dtype</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.kind"><code class="docutils literal notranslate"><span class="pre">kind</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.para_dir"><code class="docutils literal notranslate"><span class="pre">para_dir</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.INPUT_SET_CASE"><code class="docutils literal notranslate"><span class="pre">INPUT_SET_CASE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.input_case"><code class="docutils literal notranslate"><span class="pre">input_case</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.INPUT_REAL_FIELD"><code class="docutils literal notranslate"><span class="pre">INPUT_REAL_FIELD</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.OUTPUT_REAL_FIELD"><code class="docutils literal notranslate"><span class="pre">OUTPUT_REAL_FIELD</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.INPUT_FROM_FILE"><code class="docutils literal notranslate"><span class="pre">INPUT_FROM_FILE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.input_file_name"><code class="docutils literal notranslate"><span class="pre">input_file_name</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.input_dir"><code class="docutils literal notranslate"><span class="pre">input_dir</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.output_dir"><code class="docutils literal notranslate"><span class="pre">output_dir</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.dimension"><code class="docutils literal notranslate"><span class="pre">dimension</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.Nx"><code class="docutils literal notranslate"><span class="pre">Nx</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.Ny"><code class="docutils literal notranslate"><span class="pre">Ny</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.Nz"><code class="docutils literal notranslate"><span class="pre">Nz</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id0"><code class="docutils literal notranslate"><span class="pre">Ny</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.L"><code class="docutils literal notranslate"><span class="pre">L</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.BOX_SIZE_DEFAULT"><code class="docutils literal notranslate"><span class="pre">BOX_SIZE_DEFAULT</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><code class="docutils literal notranslate"><span class="pre">L</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.Rac"><code class="docutils literal notranslate"><span class="pre">Rac</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.Ra"><code class="docutils literal notranslate"><span class="pre">Ra</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.Pr"><code class="docutils literal notranslate"><span class="pre">Pr</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.kappa"><code class="docutils literal notranslate"><span class="pre">kappa</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.nu"><code class="docutils literal notranslate"><span class="pre">nu</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.HYPO_DISSIPATION"><code class="docutils literal notranslate"><span class="pre">HYPO_DISSIPATION</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.HYPER_DISSIPATION"><code class="docutils literal notranslate"><span class="pre">HYPER_DISSIPATION</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.nu_hypo"><code class="docutils literal notranslate"><span class="pre">nu_hypo</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.nu_hypo_power"><code class="docutils literal notranslate"><span class="pre">nu_hypo_power</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.nu_hypo_cutoff"><code class="docutils literal notranslate"><span class="pre">nu_hypo_cutoff</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.nu_hyper"><code class="docutils literal notranslate"><span class="pre">nu_hyper</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.nu_hyper_power"><code class="docutils literal notranslate"><span class="pre">nu_hyper_power</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.FORCING_ENABLED"><code class="docutils literal notranslate"><span class="pre">FORCING_ENABLED</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.FORCING_SCHEME"><code class="docutils literal notranslate"><span class="pre">FORCING_SCHEME</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.forcing_range"><code class="docutils literal notranslate"><span class="pre">forcing_range</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.injection_u"><code class="docutils literal notranslate"><span class="pre">injection_u</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.injection_h"><code class="docutils literal notranslate"><span class="pre">injection_h</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.ROTATION_ENABLED"><code class="docutils literal notranslate"><span class="pre">ROTATION_ENABLED</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.Omega"><code class="docutils literal notranslate"><span class="pre">Omega</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.MAINTAIN_FIELD"><code class="docutils literal notranslate"><span class="pre">MAINTAIN_FIELD</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.maintain_mux"><code class="docutils literal notranslate"><span class="pre">maintain_mux</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.time_scheme"><code class="docutils literal notranslate"><span class="pre">time_scheme</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.t_initial"><code class="docutils literal notranslate"><span class="pre">t_initial</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.t_final"><code class="docutils literal notranslate"><span class="pre">t_final</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.dt"><code class="docutils literal notranslate"><span class="pre">dt</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.FIXED_DT"><code class="docutils literal notranslate"><span class="pre">FIXED_DT</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.Courant_no"><code class="docutils literal notranslate"><span class="pre">Courant_no</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.t_eps"><code class="docutils literal notranslate"><span class="pre">t_eps</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.PRINT_PARAMETERS"><code class="docutils literal notranslate"><span class="pre">PRINT_PARAMETERS</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.RUNTIME_SAVE"><code class="docutils literal notranslate"><span class="pre">RUNTIME_SAVE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.LIVE_PLOT"><code class="docutils literal notranslate"><span class="pre">LIVE_PLOT</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.USE_BINDING"><code class="docutils literal notranslate"><span class="pre">USE_BINDING</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.PLANAR_SPECTRA"><code class="docutils literal notranslate"><span class="pre">PLANAR_SPECTRA</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.SAVE_VORTICITY"><code class="docutils literal notranslate"><span class="pre">SAVE_VORTICITY</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.SAVE_VECPOT"><code class="docutils literal notranslate"><span class="pre">SAVE_VECPOT</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.modes_save"><code class="docutils literal notranslate"><span class="pre">modes_save</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_field_save_start"><code class="docutils literal notranslate"><span class="pre">iter_field_save_start</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_field_save_inter"><code class="docutils literal notranslate"><span class="pre">iter_field_save_inter</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_field_save_buffer"><code class="docutils literal notranslate"><span class="pre">iter_field_save_buffer</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_glob_energy_print_start"><code class="docutils literal notranslate"><span class="pre">iter_glob_energy_print_start</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_glob_energy_print_inter"><code class="docutils literal notranslate"><span class="pre">iter_glob_energy_print_inter</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_glob_save_buffer"><code class="docutils literal notranslate"><span class="pre">iter_glob_save_buffer</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_ekTk_save_start"><code class="docutils literal notranslate"><span class="pre">iter_ekTk_save_start</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_ekTk_save_inter"><code class="docutils literal notranslate"><span class="pre">iter_ekTk_save_inter</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_ekTk_save_buffer"><code class="docutils literal notranslate"><span class="pre">iter_ekTk_save_buffer</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_modes_save_start"><code class="docutils literal notranslate"><span class="pre">iter_modes_save_start</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_modes_save_inter"><code class="docutils literal notranslate"><span class="pre">iter_modes_save_inter</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.iter_modes_save_buffer"><code class="docutils literal notranslate"><span class="pre">iter_modes_save_buffer</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.VALIDATE_SOLVER"><code class="docutils literal notranslate"><span class="pre">VALIDATE_SOLVER</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.temp.sample_para_hydro.injections"><code class="docutils literal notranslate"><span class="pre">injections</span></code></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Mahendra Verma, Shashwat Nirgudkar, Abhay Kumar
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

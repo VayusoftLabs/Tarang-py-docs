@@ -30,6 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -40,6 +41,8 @@
     <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '_api/tarang-cli/sample_para/index';</script>
     <script src="../../../_static/custom.js"></script>
@@ -367,9 +370,15 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.kappa_hyper_power"><code class="docutils literal notranslate"><span class="pre">kappa_hyper_power</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.FORCING_ENABLED"><code class="docutils literal notranslate"><span class="pre">FORCING_ENABLED</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.FORCING_SCHEME"><code class="docutils literal notranslate"><span class="pre">FORCING_SCHEME</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.RANDOM_FORCING_TYPE"><code class="docutils literal notranslate"><span class="pre">RANDOM_FORCING_TYPE</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.forcing_range"><code class="docutils literal notranslate"><span class="pre">forcing_range</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.injections"><code class="docutils literal notranslate"><span class="pre">injections</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.injection_u"><code class="docutils literal notranslate"><span class="pre">injection_u</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.injection_h"><code class="docutils literal notranslate"><span class="pre">injection_h</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.toner_tu_alpha"><code class="docutils literal notranslate"><span class="pre">toner_tu_alpha</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.toner_tu_beta"><code class="docutils literal notranslate"><span class="pre">toner_tu_beta</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.injection_plus"><code class="docutils literal notranslate"><span class="pre">injection_plus</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.injection_minus"><code class="docutils literal notranslate"><span class="pre">injection_minus</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.injection_vector_potential"><code class="docutils literal notranslate"><span class="pre">injection_vector_potential</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.injection_magnetic_helicity"><code class="docutils literal notranslate"><span class="pre">injection_magnetic_helicity</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.BUOYANCY_ENABLED"><code class="docutils literal notranslate"><span class="pre">BUOYANCY_ENABLED</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.Nb"><code class="docutils literal notranslate"><span class="pre">Nb</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.ROTATION_ENABLED"><code class="docutils literal notranslate"><span class="pre">ROTATION_ENABLED</span></code></a></li>
@@ -571,13 +580,31 @@ document.write(`
 <tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.sample_para.FORCING_SCHEME" title="tarang-cli.sample_para.FORCING_SCHEME"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FORCING_SCHEME</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.sample_para.RANDOM_FORCING_TYPE" title="tarang-cli.sample_para.RANDOM_FORCING_TYPE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RANDOM_FORCING_TYPE</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.sample_para.forcing_range" title="tarang-cli.sample_para.forcing_range"><code class="xref py py-obj docutils literal notranslate"><span class="pre">forcing_range</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.sample_para.forcing_range" title="tarang-cli.sample_para.forcing_range"><code class="xref py py-obj docutils literal notranslate"><span class="pre">forcing_range</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.sample_para.injection_u" title="tarang-cli.sample_para.injection_u"><code class="xref py py-obj docutils literal notranslate"><span class="pre">injection_u</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.sample_para.injections" title="tarang-cli.sample_para.injections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">injections</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.sample_para.injection_h" title="tarang-cli.sample_para.injection_h"><code class="xref py py-obj docutils literal notranslate"><span class="pre">injection_h</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.sample_para.toner_tu_alpha" title="tarang-cli.sample_para.toner_tu_alpha"><code class="xref py py-obj docutils literal notranslate"><span class="pre">toner_tu_alpha</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.sample_para.toner_tu_beta" title="tarang-cli.sample_para.toner_tu_beta"><code class="xref py py-obj docutils literal notranslate"><span class="pre">toner_tu_beta</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.sample_para.injection_plus" title="tarang-cli.sample_para.injection_plus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">injection_plus</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.sample_para.injection_minus" title="tarang-cli.sample_para.injection_minus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">injection_minus</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.sample_para.injection_vector_potential" title="tarang-cli.sample_para.injection_vector_potential"><code class="xref py py-obj docutils literal notranslate"><span class="pre">injection_vector_potential</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#tarang-cli.sample_para.injection_magnetic_helicity" title="tarang-cli.sample_para.injection_magnetic_helicity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">injection_magnetic_helicity</span></code></a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#tarang-cli.sample_para.BUOYANCY_ENABLED" title="tarang-cli.sample_para.BUOYANCY_ENABLED"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BUOYANCY_ENABLED</span></code></a></p></td>
@@ -770,17 +797,17 @@ document.write(`
 
 <dl class="py data">
 <dt class="sig sig-object py" id="tarang-cli.sample_para.Nx">
-<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">Nx</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">128</span></em><a class="headerlink" href="#tarang-cli.sample_para.Nx" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">Nx</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1024</span></em><a class="headerlink" href="#tarang-cli.sample_para.Nx" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="tarang-cli.sample_para.Ny">
-<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">Ny</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">128</span></em><a class="headerlink" href="#tarang-cli.sample_para.Ny" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">Ny</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#tarang-cli.sample_para.Ny" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="tarang-cli.sample_para.Nz">
-<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">Nz</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">128</span></em><a class="headerlink" href="#tarang-cli.sample_para.Nz" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">Nz</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1024</span></em><a class="headerlink" href="#tarang-cli.sample_para.Nz" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py data">
@@ -925,17 +952,12 @@ document.write(`
 
 <dl class="py data">
 <dt class="sig sig-object py" id="tarang-cli.sample_para.FORCING_ENABLED">
-<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">FORCING_ENABLED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tarang-cli.sample_para.FORCING_ENABLED" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">FORCING_ENABLED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#tarang-cli.sample_para.FORCING_ENABLED" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py data">
 <dt class="sig sig-object py" id="tarang-cli.sample_para.FORCING_SCHEME">
-<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">FORCING_SCHEME</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'random'</span></em><a class="headerlink" href="#tarang-cli.sample_para.FORCING_SCHEME" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py data">
-<dt class="sig sig-object py" id="tarang-cli.sample_para.RANDOM_FORCING_TYPE">
-<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">RANDOM_FORCING_TYPE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'u'</span></em><a class="headerlink" href="#tarang-cli.sample_para.RANDOM_FORCING_TYPE" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">FORCING_SCHEME</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'toner_tu'</span></em><a class="headerlink" href="#tarang-cli.sample_para.FORCING_SCHEME" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py data">
@@ -944,8 +966,43 @@ document.write(`
 <dd></dd></dl>
 
 <dl class="py data">
-<dt class="sig sig-object py" id="tarang-cli.sample_para.injections">
-<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">injections</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[0,</span> <span class="pre">0,</span> <span class="pre">0]</span></em><a class="headerlink" href="#tarang-cli.sample_para.injections" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="tarang-cli.sample_para.injection_u">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">injection_u</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.1</span></em><a class="headerlink" href="#tarang-cli.sample_para.injection_u" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.sample_para.injection_h">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">injection_h</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.01</span></em><a class="headerlink" href="#tarang-cli.sample_para.injection_h" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.sample_para.toner_tu_alpha">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">toner_tu_alpha</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1.0</span></em><a class="headerlink" href="#tarang-cli.sample_para.toner_tu_alpha" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.sample_para.toner_tu_beta">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">toner_tu_beta</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1.0</span></em><a class="headerlink" href="#tarang-cli.sample_para.toner_tu_beta" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.sample_para.injection_plus">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">injection_plus</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.1</span></em><a class="headerlink" href="#tarang-cli.sample_para.injection_plus" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.sample_para.injection_minus">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">injection_minus</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.1</span></em><a class="headerlink" href="#tarang-cli.sample_para.injection_minus" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.sample_para.injection_vector_potential">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">injection_vector_potential</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.01</span></em><a class="headerlink" href="#tarang-cli.sample_para.injection_vector_potential" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="tarang-cli.sample_para.injection_magnetic_helicity">
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">injection_magnetic_helicity</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.01</span></em><a class="headerlink" href="#tarang-cli.sample_para.injection_magnetic_helicity" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py data">
@@ -1000,7 +1057,7 @@ document.write(`
 
 <dl class="py data">
 <dt class="sig sig-object py" id="tarang-cli.sample_para.FIXED_DT">
-<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">FIXED_DT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tarang-cli.sample_para.FIXED_DT" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">FIXED_DT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#tarang-cli.sample_para.FIXED_DT" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py data">
@@ -1020,7 +1077,7 @@ document.write(`
 
 <dl class="py data">
 <dt class="sig sig-object py" id="tarang-cli.sample_para.RUNTIME_SAVE">
-<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">RUNTIME_SAVE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tarang-cli.sample_para.RUNTIME_SAVE" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">tarang-cli.sample_para.</span></span><span class="sig-name descname"><span class="pre">RUNTIME_SAVE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#tarang-cli.sample_para.RUNTIME_SAVE" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py data">
@@ -1199,9 +1256,15 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.kappa_hyper_power"><code class="docutils literal notranslate"><span class="pre">kappa_hyper_power</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.FORCING_ENABLED"><code class="docutils literal notranslate"><span class="pre">FORCING_ENABLED</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.FORCING_SCHEME"><code class="docutils literal notranslate"><span class="pre">FORCING_SCHEME</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.RANDOM_FORCING_TYPE"><code class="docutils literal notranslate"><span class="pre">RANDOM_FORCING_TYPE</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.forcing_range"><code class="docutils literal notranslate"><span class="pre">forcing_range</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.injections"><code class="docutils literal notranslate"><span class="pre">injections</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.injection_u"><code class="docutils literal notranslate"><span class="pre">injection_u</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.injection_h"><code class="docutils literal notranslate"><span class="pre">injection_h</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.toner_tu_alpha"><code class="docutils literal notranslate"><span class="pre">toner_tu_alpha</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.toner_tu_beta"><code class="docutils literal notranslate"><span class="pre">toner_tu_beta</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.injection_plus"><code class="docutils literal notranslate"><span class="pre">injection_plus</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.injection_minus"><code class="docutils literal notranslate"><span class="pre">injection_minus</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.injection_vector_potential"><code class="docutils literal notranslate"><span class="pre">injection_vector_potential</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.injection_magnetic_helicity"><code class="docutils literal notranslate"><span class="pre">injection_magnetic_helicity</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.BUOYANCY_ENABLED"><code class="docutils literal notranslate"><span class="pre">BUOYANCY_ENABLED</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.Nb"><code class="docutils literal notranslate"><span class="pre">Nb</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tarang-cli.sample_para.ROTATION_ENABLED"><code class="docutils literal notranslate"><span class="pre">ROTATION_ENABLED</span></code></a></li>

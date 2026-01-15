@@ -29,6 +29,7 @@
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -39,6 +40,8 @@
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
     <script src="_static/custom.js"></script>
@@ -291,7 +294,6 @@ document.write(`
  | <a href="#T"><strong>T</strong></a>
  | <a href="#U"><strong>U</strong></a>
  | <a href="#V"><strong>V</strong></a>
- | <a href="#W"><strong>W</strong></a>
  | <a href="#X"><strong>X</strong></a>
  | <a href="#Y"><strong>Y</strong></a>
  | <a href="#Z"><strong>Z</strong></a>
@@ -348,17 +350,25 @@ document.write(`
         <li><a href="_api/TARANG/libp/global_fns/spectral_setup/index.html#TARANG.libp.global_fns.spectral_setup.boundary_cos_cond">(in module TARANG.libp.global_fns.spectral_setup)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_api/TARANG/lib/global_fns/spectral_setup/index.html#TARANG.lib.global_fns.spectral_setup.boundary_sin_cond">boundary_sin_cond() (in module TARANG.lib.global_fns.spectral_setup)</a>
 
       <ul>
         <li><a href="_api/TARANG/libp/global_fns/spectral_setup/index.html#TARANG.libp.global_fns.spectral_setup.boundary_sin_cond">(in module TARANG.libp.global_fns.spectral_setup)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.BOX_SIZE_DEFAULT">BOX_SIZE_DEFAULT (in module tarang-cli.sample_para)</a>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.BOX_SIZE_DEFAULT">BOX_SIZE_DEFAULT (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.BOX_SIZE_DEFAULT">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.BOX_SIZE_DEFAULT">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.BOX_SIZE_DEFAULT">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.BOX_SIZE_DEFAULT">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.BOX_SIZE_DEFAULT">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.BOX_SIZE_DEFAULT">(in module tarang-cli.validation.para_mhd)</a>
@@ -368,11 +378,13 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.BOX_SIZE_DEFAULT">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/tarang_aws/index.html#tarang-cli.tarang_aws.BUCKET_NAME">BUCKET_NAME (in module tarang-cli.tarang_aws)</a>
-</li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.BUOYANCY_ENABLED">BUOYANCY_ENABLED (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.BUOYANCY_ENABLED">BUOYANCY_ENABLED (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.BUOYANCY_ENABLED">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.BUOYANCY_ENABLED">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.BUOYANCY_ENABLED">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.BUOYANCY_ENABLED">(in module tarang-cli.validation.para_mhd)</a>
@@ -442,9 +454,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_setup/index.html#TARANG.libp.valid.val_setup.comm">(in module TARANG.libp.valid.val_setup)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.complex_dtype">complex_dtype (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.complex_dtype">complex_dtype (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.complex_dtype">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.complex_dtype">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.complex_dtype">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.complex_dtype">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.complex_dtype">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.complex_dtype">(in module tarang-cli.validation.para_mhd)</a>
@@ -540,14 +560,14 @@ document.write(`
       </ul></li>
       <li><a href="_api/TARANG/lib/force/compute_force_scalar/index.html#TARANG.lib.force.compute_force_scalar.compute_force_scalar">compute_force_scalar() (in module TARANG.lib.force.compute_force_scalar)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_api/TARANG/lib/global_fns/universal/index.html#TARANG.lib.global_fns.universal.UniversalArrays.COMPUTE_NLIN_FIRST_FLAG">COMPUTE_NLIN_FIRST_FLAG (TARANG.lib.global_fns.universal.UniversalArrays attribute)</a>, <a href="_api/TARANG/lib/global_fns/universal/index.html#id0">[1]</a>
 
       <ul>
         <li><a href="_api/TARANG/libp/global_fns/universal/index.html#TARANG.libp.global_fns.universal.UniversalArrays.COMPUTE_NLIN_FIRST_FLAG">(TARANG.libp.global_fns.universal.UniversalArrays attribute)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_api/TARANG/lib/solver_fns/compute_nlin_hydro/index.html#TARANG.lib.solver_fns.compute_nlin_hydro.compute_nlin_hydro">compute_nlin_hydro() (in module TARANG.lib.solver_fns.compute_nlin_hydro)</a>
 
       <ul>
@@ -644,6 +664,12 @@ document.write(`
       </ul></li>
       <li><a href="_api/tarang-cli/validation/bench_hydro/index.html#tarang-cli.validation.bench_hydro.compute_structure_function">compute_structure_function() (in module tarang-cli.validation.bench_hydro)</a>
 </li>
+      <li><a href="_api/TARANG/lib/force/compute_force_hydro/index.html#TARANG.lib.force.compute_force_hydro.compute_taylor_green_forcing">compute_taylor_green_forcing() (in module TARANG.lib.force.compute_force_hydro)</a>
+
+      <ul>
+        <li><a href="_api/TARANG/lib/force/compute_force_mhd/index.html#TARANG.lib.force.compute_force_mhd.compute_taylor_green_forcing">(in module TARANG.lib.force.compute_force_mhd)</a>
+</li>
+      </ul></li>
       <li><a href="_api/TARANG/lib/force/compute_force_hydro/index.html#TARANG.lib.force.compute_force_hydro.compute_toner_tu_forcing">compute_toner_tu_forcing() (in module TARANG.lib.force.compute_force_hydro)</a>
 </li>
       <li><a href="_api/TARANG/lib/fields/scalar_field/index.html#TARANG.lib.fields.scalar_field.ScalarField.compute_total_energy">compute_total_energy() (TARANG.lib.fields.scalar_field.ScalarField method)</a>
@@ -668,9 +694,17 @@ document.write(`
 </li>
       <li><a href="_api/tarang-cli/tarang_utility/index.html#tarang-cli.tarang_utility.TarangUtility.copy_para_files">copy_para_files() (tarang-cli.tarang_utility.TarangUtility static method)</a>
 </li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.Courant_no">Courant_no (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.Courant_no">Courant_no (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.Courant_no">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.Courant_no">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.Courant_no">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.Courant_no">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.Courant_no">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.Courant_no">(in module tarang-cli.validation.para_mhd)</a>
@@ -724,9 +758,17 @@ document.write(`
 </li>
       <li><a href="_api/TARANG/lib/time_advance/time_advance_chaos/index.html#TARANG.lib.time_advance.time_advance_chaos.dev1">dev1 (in module TARANG.lib.time_advance.time_advance_chaos)</a>
 </li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.device">device (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.device">device (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.device">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.device">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.device">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.device">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.device">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.device">(in module tarang-cli.validation.para_mhd)</a>
@@ -736,9 +778,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.device">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.device_rank">device_rank (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.device_rank">device_rank (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.device_rank">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.device_rank">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.device_rank">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.device_rank">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.device_rank">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.device_rank">(in module tarang-cli.validation.para_mhd)</a>
@@ -748,9 +798,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.device_rank">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.dimension">dimension (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.dimension">dimension (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.dimension">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.dimension">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.dimension">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.dimension">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.dimension">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.dimension">(in module tarang-cli.validation.para_mhd)</a>
@@ -770,9 +828,17 @@ document.write(`
       </ul></li>
       <li><a href="_api/TARANG/libp/fields/vect_field/index.html#TARANG.libp.fields.vect_field.VectorField.dot_prod_nlin_VF">dot_prod_nlin_VF() (TARANG.libp.fields.vect_field.VectorField method)</a>
 </li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.dt">dt (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.dt">dt (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.dt">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.dt">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.dt">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.dt">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.dt">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.dt">(in module tarang-cli.validation.para_mhd)</a>
@@ -864,9 +930,13 @@ document.write(`
       </ul></li>
       <li><a href="_api/TARANG/lib/solver_fns/compute_nlin_mhd/index.html#TARANG.lib.solver_fns.compute_nlin_mhd.Elsasser_to_UB_real">Elsasser_to_UB_real() (in module TARANG.lib.solver_fns.compute_nlin_mhd)</a>
 </li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.eta">eta (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.eta">eta (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.eta">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.eta">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.eta">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.eta">(in module tarang-cli.validation.para_mhd)</a>
@@ -876,9 +946,13 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.eta">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.eta_hyper">eta_hyper (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.eta_hyper">eta_hyper (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.eta_hyper">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.eta_hyper">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.eta_hyper">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.eta_hyper">(in module tarang-cli.validation.para_mhd)</a>
@@ -888,11 +962,13 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.eta_hyper">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.eta_hyper_power">eta_hyper_power (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.eta_hyper_power">eta_hyper_power (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.eta_hyper_power">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.eta_hyper_power">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.eta_hyper_power">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.eta_hyper_power">(in module tarang-cli.validation.para_mhd)</a>
@@ -902,9 +978,15 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.eta_hyper_power">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.eta_hypo">eta_hypo (in module tarang-cli.sample_para)</a>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.eta_hypo">eta_hypo (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.eta_hypo">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.eta_hypo">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.eta_hypo">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.eta_hypo">(in module tarang-cli.validation.para_mhd)</a>
@@ -914,9 +996,13 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.eta_hypo">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.eta_hypo_cutoff">eta_hypo_cutoff (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.eta_hypo_cutoff">eta_hypo_cutoff (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.eta_hypo_cutoff">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.eta_hypo_cutoff">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.eta_hypo_cutoff">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.eta_hypo_cutoff">(in module tarang-cli.validation.para_mhd)</a>
@@ -926,9 +1012,13 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.eta_hypo_cutoff">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.eta_hypo_power">eta_hypo_power (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.eta_hypo_power">eta_hypo_power (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.eta_hypo_power">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.eta_hypo_power">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.eta_hypo_power">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.eta_hypo_power">(in module tarang-cli.validation.para_mhd)</a>
@@ -982,9 +1072,17 @@ document.write(`
 </li>
       <li><a href="_api/TARANG/libp/fields/vect_field/index.html#TARANG.libp.fields.vect_field.VectorField.fill_shell">fill_shell() (TARANG.libp.fields.vect_field.VectorField method)</a>
 </li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.FIXED_DT">FIXED_DT (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.FIXED_DT">FIXED_DT (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.FIXED_DT">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.FIXED_DT">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.FIXED_DT">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.FIXED_DT">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.FIXED_DT">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.FIXED_DT">(in module tarang-cli.validation.para_mhd)</a>
@@ -1010,8 +1108,6 @@ document.write(`
         <li><a href="_api/TARANG/libp/global_fns/universal/index.html#TARANG.libp.global_fns.universal.UniversalArrays.FORCE_PHASE_FIRST">(TARANG.libp.global_fns.universal.UniversalArrays attribute)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_api/TARANG/lib/fields/vect_field/index.html#TARANG.lib.fields.vect_field.VectorField.force_Vx">force_Vx (TARANG.lib.fields.vect_field.VectorField attribute)</a>, <a href="_api/TARANG/lib/fields/vect_field/index.html#id6">[1]</a>
 
       <ul>
@@ -1024,15 +1120,25 @@ document.write(`
         <li><a href="_api/TARANG/libp/fields/vect_field/index.html#TARANG.libp.fields.vect_field.VectorField.force_Vy">(TARANG.libp.fields.vect_field.VectorField attribute)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_api/TARANG/lib/fields/vect_field/index.html#TARANG.lib.fields.vect_field.VectorField.force_Vz">force_Vz (TARANG.lib.fields.vect_field.VectorField attribute)</a>, <a href="_api/TARANG/lib/fields/vect_field/index.html#id8">[1]</a>
 
       <ul>
         <li><a href="_api/TARANG/libp/fields/vect_field/index.html#TARANG.libp.fields.vect_field.VectorField.force_Vz">(TARANG.libp.fields.vect_field.VectorField attribute)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.FORCING_ENABLED">FORCING_ENABLED (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.FORCING_ENABLED">FORCING_ENABLED (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.FORCING_ENABLED">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.FORCING_ENABLED">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.FORCING_ENABLED">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.FORCING_ENABLED">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.FORCING_ENABLED">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.FORCING_ENABLED">(in module tarang-cli.validation.para_mhd)</a>
@@ -1042,9 +1148,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.FORCING_ENABLED">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.forcing_range">forcing_range (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.forcing_range">forcing_range (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.forcing_range">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.forcing_range">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.forcing_range">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.forcing_range">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.forcing_range">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.forcing_range">(in module tarang-cli.validation.para_mhd)</a>
@@ -1054,9 +1168,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.forcing_range">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.FORCING_SCHEME">FORCING_SCHEME (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.FORCING_SCHEME">FORCING_SCHEME (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.FORCING_SCHEME">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.FORCING_SCHEME">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.FORCING_SCHEME">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.FORCING_SCHEME">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.FORCING_SCHEME">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.FORCING_SCHEME">(in module tarang-cli.validation.para_mhd)</a>
@@ -1096,8 +1218,6 @@ document.write(`
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_api/tarang-cli/tarang_utility/index.html#tarang-cli.tarang_utility.TarangUtility.get_executable_path">get_executable_path() (tarang-cli.tarang_utility.TarangUtility static method)</a>
 </li>
-      <li><a href="_api/tarang-cli/tarang_aws/index.html#tarang-cli.tarang_aws.get_s3_client">get_s3_client() (in module tarang-cli.tarang_aws)</a>
-</li>
       <li><a href="_api/TARANG/libp/global_fns/spectral_setup/index.html#TARANG.libp.global_fns.spectral_setup.getSplit">getSplit() (in module TARANG.libp.global_fns.spectral_setup)</a>
 </li>
       <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.GPU_DIRECT_STORAGE">GPU_DIRECT_STORAGE (in module TARANG.libp.valid.val_para)</a>
@@ -1124,9 +1244,17 @@ document.write(`
 </li>
       <li><a href="_api/tarang-cli/paraIO/index.html#tarang-cli.paraIO.Hydro_Vars">Hydro_Vars (in module tarang-cli.paraIO)</a>
 </li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.HYPER_DISSIPATION">HYPER_DISSIPATION (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.HYPER_DISSIPATION">HYPER_DISSIPATION (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.HYPER_DISSIPATION">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.HYPER_DISSIPATION">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.HYPER_DISSIPATION">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.HYPER_DISSIPATION">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.HYPER_DISSIPATION">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.HYPER_DISSIPATION">(in module tarang-cli.validation.para_mhd)</a>
@@ -1144,9 +1272,17 @@ document.write(`
         <li><a href="_api/TARANG/lib/fields/vect_field/index.html#TARANG.lib.fields.vect_field.VectorField.hyper_dissipation">(TARANG.lib.fields.vect_field.VectorField attribute)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.HYPO_DISSIPATION">HYPO_DISSIPATION (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.HYPO_DISSIPATION">HYPO_DISSIPATION (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.HYPO_DISSIPATION">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.HYPO_DISSIPATION">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.HYPO_DISSIPATION">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.HYPO_DISSIPATION">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.HYPO_DISSIPATION">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.HYPO_DISSIPATION">(in module tarang-cli.validation.para_mhd)</a>
@@ -1232,21 +1368,89 @@ document.write(`
 </li>
       <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.injection_e_r">injection_e_r (in module TARANG.libp.valid.val_para)</a>
 </li>
-      <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.injection_rate">injection_rate (in module TARANG.libp.valid.val_para)</a>
-</li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.injections">injections (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.injection_h">injection_h (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.injection_h">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.injection_h">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/TARANG/lib/valid/val_para/index.html#TARANG.lib.valid.val_para.injection_h">(in module TARANG.lib.valid.val_para)</a>
+</li>
+      </ul></li>
+      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.injection_magnetic_helicity">injection_magnetic_helicity (in module tarang-cli.sample_para)</a>
+
+      <ul>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.injection_magnetic_helicity">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/TARANG/lib/valid/val_para/index.html#TARANG.lib.valid.val_para.injection_magnetic_helicity">(in module TARANG.lib.valid.val_para)</a>
+</li>
+      </ul></li>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.injection_minus">injection_minus (in module tarang-cli.para)</a>
+
+      <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.injection_minus">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.injection_minus">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/TARANG/lib/valid/val_para/index.html#TARANG.lib.valid.val_para.injection_minus">(in module TARANG.lib.valid.val_para)</a>
+</li>
+      </ul></li>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.injection_plus">injection_plus (in module tarang-cli.para)</a>
+
+      <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.injection_plus">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.injection_plus">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/TARANG/lib/valid/val_para/index.html#TARANG.lib.valid.val_para.injection_plus">(in module TARANG.lib.valid.val_para)</a>
+</li>
+      </ul></li>
+      <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.injection_rate">injection_rate (in module TARANG.libp.valid.val_para)</a>
+</li>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.injection_u">injection_u (in module tarang-cli.para)</a>
+
+      <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.injection_u">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.injection_u">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/TARANG/lib/valid/val_para/index.html#TARANG.lib.valid.val_para.injection_u">(in module TARANG.lib.valid.val_para)</a>
+</li>
+      </ul></li>
+      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.injection_vector_potential">injection_vector_potential (in module tarang-cli.sample_para)</a>
+
+      <ul>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.injection_vector_potential">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/TARANG/lib/valid/val_para/index.html#TARANG.lib.valid.val_para.injection_vector_potential">(in module TARANG.lib.valid.val_para)</a>
+</li>
+      </ul></li>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.injections">injections (in module tarang-cli.para)</a>
+
+      <ul>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.injections">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.injections">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.injections">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.injections">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.injections">(in module tarang-cli.validation.para_mhd)</a>
 </li>
-        <li><a href="_api/TARANG/lib/valid/val_para/index.html#TARANG.lib.valid.val_para.injections">(in module TARANG.lib.valid.val_para)</a>
-</li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.input_case">input_case (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.input_case">input_case (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.input_case">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.input_case">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.input_case">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.input_case">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.input_case">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.input_case">(in module tarang-cli.validation.para_mhd)</a>
@@ -1254,9 +1458,17 @@ document.write(`
         <li><a href="_api/TARANG/lib/valid/val_para/index.html#TARANG.lib.valid.val_para.input_case">(in module TARANG.lib.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.input_dir">input_dir (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.input_dir">input_dir (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.input_dir">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.input_dir">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.input_dir">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.input_dir">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.input_dir">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.input_dir">(in module tarang-cli.validation.para_mhd)</a>
@@ -1266,9 +1478,13 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.input_dir">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.INPUT_ELSASSER">INPUT_ELSASSER (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.INPUT_ELSASSER">INPUT_ELSASSER (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.INPUT_ELSASSER">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.INPUT_ELSASSER">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.INPUT_ELSASSER">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.INPUT_ELSASSER">(in module tarang-cli.validation.para_mhd)</a>
@@ -1276,9 +1492,17 @@ document.write(`
         <li><a href="_api/TARANG/lib/valid/val_para/index.html#TARANG.lib.valid.val_para.INPUT_ELSASSER">(in module TARANG.lib.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.input_file_name">input_file_name (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.input_file_name">input_file_name (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.input_file_name">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.input_file_name">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.input_file_name">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.input_file_name">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.input_file_name">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.input_file_name">(in module tarang-cli.validation.para_mhd)</a>
@@ -1288,9 +1512,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.input_file_name">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.INPUT_FROM_FILE">INPUT_FROM_FILE (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.INPUT_FROM_FILE">INPUT_FROM_FILE (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.INPUT_FROM_FILE">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.INPUT_FROM_FILE">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.INPUT_FROM_FILE">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.INPUT_FROM_FILE">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.INPUT_FROM_FILE">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.INPUT_FROM_FILE">(in module tarang-cli.validation.para_mhd)</a>
@@ -1298,9 +1530,17 @@ document.write(`
         <li><a href="_api/TARANG/lib/valid/val_para/index.html#TARANG.lib.valid.val_para.INPUT_FROM_FILE">(in module TARANG.lib.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.INPUT_REAL_FIELD">INPUT_REAL_FIELD (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.INPUT_REAL_FIELD">INPUT_REAL_FIELD (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.INPUT_REAL_FIELD">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.INPUT_REAL_FIELD">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.INPUT_REAL_FIELD">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.INPUT_REAL_FIELD">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.INPUT_REAL_FIELD">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.INPUT_REAL_FIELD">(in module tarang-cli.validation.para_mhd)</a>
@@ -1308,11 +1548,17 @@ document.write(`
         <li><a href="_api/TARANG/lib/valid/val_para/index.html#TARANG.lib.valid.val_para.INPUT_REAL_FIELD">(in module TARANG.lib.valid.val_para)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.INPUT_SET_CASE">INPUT_SET_CASE (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.INPUT_SET_CASE">INPUT_SET_CASE (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.INPUT_SET_CASE">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.INPUT_SET_CASE">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.INPUT_SET_CASE">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.INPUT_SET_CASE">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.INPUT_SET_CASE">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.INPUT_SET_CASE">(in module tarang-cli.validation.para_mhd)</a>
@@ -1320,6 +1566,8 @@ document.write(`
         <li><a href="_api/TARANG/lib/valid/val_para/index.html#TARANG.lib.valid.val_para.INPUT_SET_CASE">(in module TARANG.lib.valid.val_para)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_api/TARANG/lib/global_fns/spectral_setup/index.html#TARANG.lib.global_fns.spectral_setup.inverse_transform">inverse_transform() (in module TARANG.lib.global_fns.spectral_setup)</a>
 
       <ul>
@@ -1332,11 +1580,31 @@ document.write(`
         <li><a href="_api/TARANG/libp/global_fns/universal/index.html#TARANG.libp.global_fns.universal.UniversalArrays.iter">(TARANG.libp.global_fns.universal.UniversalArrays attribute)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_ekTk_save_buffer">iter_ekTk_save_buffer (in module tarang-cli.sample_para)</a>
-</li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_ekTk_save_inter">iter_ekTk_save_inter (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.iter_ekTk_save_buffer">iter_ekTk_save_buffer (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_ekTk_save_buffer">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.iter_ekTk_save_buffer">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.iter_ekTk_save_buffer">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.iter_ekTk_save_buffer">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
+        <li><a href="_api/TARANG/lib/valid/val_para/index.html#TARANG.lib.valid.val_para.iter_ekTk_save_buffer">(in module TARANG.lib.valid.val_para)</a>
+</li>
+      </ul></li>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.iter_ekTk_save_inter">iter_ekTk_save_inter (in module tarang-cli.para)</a>
+
+      <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_ekTk_save_inter">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.iter_ekTk_save_inter">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.iter_ekTk_save_inter">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.iter_ekTk_save_inter">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.iter_ekTk_save_inter">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.iter_ekTk_save_inter">(in module tarang-cli.validation.para_mhd)</a>
@@ -1346,9 +1614,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.iter_ekTk_save_inter">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_ekTk_save_start">iter_ekTk_save_start (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.iter_ekTk_save_start">iter_ekTk_save_start (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_ekTk_save_start">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.iter_ekTk_save_start">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.iter_ekTk_save_start">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.iter_ekTk_save_start">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.iter_ekTk_save_start">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.iter_ekTk_save_start">(in module tarang-cli.validation.para_mhd)</a>
@@ -1358,11 +1634,31 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.iter_ekTk_save_start">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_field_save_buffer">iter_field_save_buffer (in module tarang-cli.sample_para)</a>
-</li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_field_save_inter">iter_field_save_inter (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.iter_field_save_buffer">iter_field_save_buffer (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_field_save_buffer">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.iter_field_save_buffer">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.iter_field_save_buffer">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.iter_field_save_buffer">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
+        <li><a href="_api/TARANG/lib/valid/val_para/index.html#TARANG.lib.valid.val_para.iter_field_save_buffer">(in module TARANG.lib.valid.val_para)</a>
+</li>
+      </ul></li>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.iter_field_save_inter">iter_field_save_inter (in module tarang-cli.para)</a>
+
+      <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_field_save_inter">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.iter_field_save_inter">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.iter_field_save_inter">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.iter_field_save_inter">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.iter_field_save_inter">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.iter_field_save_inter">(in module tarang-cli.validation.para_mhd)</a>
@@ -1372,9 +1668,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.iter_field_save_inter">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_field_save_start">iter_field_save_start (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.iter_field_save_start">iter_field_save_start (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_field_save_start">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.iter_field_save_start">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.iter_field_save_start">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.iter_field_save_start">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.iter_field_save_start">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.iter_field_save_start">(in module tarang-cli.validation.para_mhd)</a>
@@ -1384,9 +1688,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.iter_field_save_start">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_glob_energy_print_inter">iter_glob_energy_print_inter (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.iter_glob_energy_print_inter">iter_glob_energy_print_inter (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_glob_energy_print_inter">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.iter_glob_energy_print_inter">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.iter_glob_energy_print_inter">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.iter_glob_energy_print_inter">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.iter_glob_energy_print_inter">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.iter_glob_energy_print_inter">(in module tarang-cli.validation.para_mhd)</a>
@@ -1396,9 +1708,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.iter_glob_energy_print_inter">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_glob_energy_print_start">iter_glob_energy_print_start (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.iter_glob_energy_print_start">iter_glob_energy_print_start (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_glob_energy_print_start">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.iter_glob_energy_print_start">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.iter_glob_energy_print_start">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.iter_glob_energy_print_start">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.iter_glob_energy_print_start">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.iter_glob_energy_print_start">(in module tarang-cli.validation.para_mhd)</a>
@@ -1408,13 +1728,45 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.iter_glob_energy_print_start">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_glob_save_buffer">iter_glob_save_buffer (in module tarang-cli.sample_para)</a>
-</li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_modes_save_buffer">iter_modes_save_buffer (in module tarang-cli.sample_para)</a>
-</li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_modes_save_inter">iter_modes_save_inter (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.iter_glob_save_buffer">iter_glob_save_buffer (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_glob_save_buffer">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.iter_glob_save_buffer">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.iter_glob_save_buffer">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.iter_glob_save_buffer">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
+        <li><a href="_api/TARANG/lib/valid/val_para/index.html#TARANG.lib.valid.val_para.iter_glob_save_buffer">(in module TARANG.lib.valid.val_para)</a>
+</li>
+      </ul></li>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.iter_modes_save_buffer">iter_modes_save_buffer (in module tarang-cli.para)</a>
+
+      <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_modes_save_buffer">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.iter_modes_save_buffer">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.iter_modes_save_buffer">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.iter_modes_save_buffer">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
+        <li><a href="_api/TARANG/lib/valid/val_para/index.html#TARANG.lib.valid.val_para.iter_modes_save_buffer">(in module TARANG.lib.valid.val_para)</a>
+</li>
+      </ul></li>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.iter_modes_save_inter">iter_modes_save_inter (in module tarang-cli.para)</a>
+
+      <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_modes_save_inter">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.iter_modes_save_inter">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.iter_modes_save_inter">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.iter_modes_save_inter">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.iter_modes_save_inter">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.iter_modes_save_inter">(in module tarang-cli.validation.para_mhd)</a>
@@ -1424,9 +1776,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.iter_modes_save_inter">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_modes_save_start">iter_modes_save_start (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.iter_modes_save_start">iter_modes_save_start (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.iter_modes_save_start">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.iter_modes_save_start">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.iter_modes_save_start">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.iter_modes_save_start">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.iter_modes_save_start">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.iter_modes_save_start">(in module tarang-cli.validation.para_mhd)</a>
@@ -1452,9 +1812,17 @@ document.write(`
 </li>
       <li><a href="_api/TARANG/libp/global_fns/spectral_setup/index.html#TARANG.libp.global_fns.spectral_setup.k_min">k_min (in module TARANG.libp.global_fns.spectral_setup)</a>
 </li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#id2">kappa (in module tarang-cli.sample_para)</a>, <a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.kappa">[1]</a>
+      <li><a href="_api/tarang-cli/para/index.html#id2">kappa (in module tarang-cli.para)</a>, <a href="_api/tarang-cli/para/index.html#tarang-cli.para.kappa">[1]</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#id2">(in module tarang-cli.sample_para)</a>, <a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.kappa">[1]</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.kappa">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.kappa">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#id2">(in module tarang-cli.temp.sample_para_scalar)</a>, <a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.kappa">[1]</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#id2">(in module tarang-cli.validation.para_hydro)</a>, <a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.kappa">[1]</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#id2">(in module tarang-cli.validation.para_mhd)</a>, <a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.kappa">[1]</a>
@@ -1464,9 +1832,13 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.kappa">(in module TARANG.libp.valid.val_para)</a>, <a href="_api/TARANG/libp/valid/val_para/index.html#id1">[1]</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.kappa_hyper">kappa_hyper (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.kappa_hyper">kappa_hyper (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.kappa_hyper">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.kappa_hyper">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.kappa_hyper">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.kappa_hyper">(in module tarang-cli.validation.para_mhd)</a>
@@ -1476,9 +1848,13 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.kappa_hyper">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.kappa_hyper_power">kappa_hyper_power (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.kappa_hyper_power">kappa_hyper_power (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.kappa_hyper_power">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.kappa_hyper_power">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.kappa_hyper_power">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.kappa_hyper_power">(in module tarang-cli.validation.para_mhd)</a>
@@ -1488,9 +1864,13 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.kappa_hyper_power">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.kappa_hypo">kappa_hypo (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.kappa_hypo">kappa_hypo (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.kappa_hypo">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.kappa_hypo">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.kappa_hypo">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.kappa_hypo">(in module tarang-cli.validation.para_mhd)</a>
@@ -1500,9 +1880,15 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.kappa_hypo">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.kappa_hypo_cutoff">kappa_hypo_cutoff (in module tarang-cli.sample_para)</a>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.kappa_hypo_cutoff">kappa_hypo_cutoff (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.kappa_hypo_cutoff">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.kappa_hypo_cutoff">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.kappa_hypo_cutoff">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.kappa_hypo_cutoff">(in module tarang-cli.validation.para_mhd)</a>
@@ -1512,11 +1898,13 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.kappa_hypo_cutoff">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.kappa_hypo_power">kappa_hypo_power (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.kappa_hypo_power">kappa_hypo_power (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.kappa_hypo_power">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.kappa_hypo_power">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.kappa_hypo_power">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.kappa_hypo_power">(in module tarang-cli.validation.para_mhd)</a>
@@ -1532,10 +1920,18 @@ document.write(`
         <li><a href="_api/TARANG/libp/global_fns/spectral_setup/index.html#TARANG.libp.global_fns.spectral_setup.kfactor">(in module TARANG.libp.global_fns.spectral_setup)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/pre_proc/resize_field/index.html#tarang-cli.pre_proc.resize_field.kind">kind (in module tarang-cli.pre_proc.resize_field)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.kind">kind (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/pre_proc/resize_field/index.html#tarang-cli.pre_proc.resize_field.kind">(in module tarang-cli.pre_proc.resize_field)</a>
+</li>
         <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.kind">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.kind">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.kind">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.kind">(in module tarang-cli.temp.sample_para_scalar)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.kind">(in module tarang-cli.validation.para_hydro)</a>
 </li>
@@ -1576,9 +1972,17 @@ document.write(`
 <h2 id="L">L</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_api/tarang-cli/sample_para/index.html#id1">L (in module tarang-cli.sample_para)</a>, <a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.L">[1]</a>
+      <li><a href="_api/tarang-cli/para/index.html#id1">L (in module tarang-cli.para)</a>, <a href="_api/tarang-cli/para/index.html#tarang-cli.para.L">[1]</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#id1">(in module tarang-cli.sample_para)</a>, <a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.L">[1]</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#id1">(in module tarang-cli.temp.sample_para_hydro)</a>, <a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.L">[1]</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#id1">(in module tarang-cli.temp.sample_para_mhd)</a>, <a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.L">[1]</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#id1">(in module tarang-cli.temp.sample_para_scalar)</a>, <a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.L">[1]</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#id1">(in module tarang-cli.validation.para_hydro)</a>, <a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.L">[1]</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#id1">(in module tarang-cli.validation.para_mhd)</a>, <a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.L">[1]</a>
@@ -1590,17 +1994,25 @@ document.write(`
 </li>
       <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.L">L (in module TARANG.libp.valid.val_para)</a>, <a href="_api/TARANG/libp/valid/val_para/index.html#id0">[1]</a>
 </li>
-      <li><a href="_api/tarang-cli/tarang_aws/index.html#tarang-cli.tarang_aws.list_pending_jobs">list_pending_jobs() (in module tarang-cli.tarang_aws)</a>
-</li>
       <li><a href="_api/tarang-cli/live_proc/live_hydro/index.html#tarang-cli.live_proc.live_hydro.live_hydro">live_hydro() (in module tarang-cli.live_proc.live_hydro)</a>
 
       <ul>
         <li><a href="_api/tarang-cli/live_proc/live_hydro_old/index.html#tarang-cli.live_proc.live_hydro_old.live_hydro">(in module tarang-cli.live_proc.live_hydro_old)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.LIVE_PLOT">LIVE_PLOT (in module tarang-cli.sample_para)</a>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.LIVE_PLOT">LIVE_PLOT (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.LIVE_PLOT">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.LIVE_PLOT">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.LIVE_PLOT">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.LIVE_PLOT">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.LIVE_PLOT">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.LIVE_PLOT">(in module tarang-cli.validation.para_mhd)</a>
@@ -1608,12 +2020,6 @@ document.write(`
         <li><a href="_api/TARANG/lib/valid/val_para/index.html#TARANG.lib.valid.val_para.LIVE_PLOT">(in module TARANG.lib.valid.val_para)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_api/tarang-cli/tarang_aws/index.html#tarang-cli.tarang_aws.LOCAL_WORK_DIR">LOCAL_WORK_DIR (in module tarang-cli.tarang_aws)</a>
-</li>
-      <li><a href="_api/tarang-cli/tarang_aws/index.html#tarang-cli.tarang_aws.logger">logger (in module tarang-cli.tarang_aws)</a>
-</li>
       <li><a href="_api/TARANG/lib/time_advance/time_advance_hydro/index.html#TARANG.lib.time_advance.time_advance_hydro.loop_breaker">loop_breaker() (in module TARANG.lib.time_advance.time_advance_hydro)</a>
 
       <ul>
@@ -1635,8 +2041,6 @@ document.write(`
       <li><a href="_api/tarang-cli/pre_proc/resize_field/index.html#tarang-cli.pre_proc.resize_field.main">main() (in module tarang-cli.pre_proc.resize_field)</a>
 
       <ul>
-        <li><a href="_api/tarang-cli/tarang_aws/index.html#tarang-cli.tarang_aws.main">(in module tarang-cli.tarang_aws)</a>
-</li>
         <li><a href="_api/tarang-cli/tarang_cli/index.html#tarang-cli.tarang_cli.main">(in module tarang-cli.tarang_cli)</a>
 </li>
         <li><a href="_api/TARANG/libp/valid/src/val_hydro/index.html#TARANG.libp.valid.src.val_hydro.main">(in module TARANG.libp.valid.src.val_hydro)</a>
@@ -1654,9 +2058,17 @@ document.write(`
         <li><a href="_api/TARANG/srcp/main_mhd/index.html#TARANG.srcp.main_mhd.main">(in module TARANG.srcp.main_mhd)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.MAINTAIN_FIELD">MAINTAIN_FIELD (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.MAINTAIN_FIELD">MAINTAIN_FIELD (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.MAINTAIN_FIELD">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.MAINTAIN_FIELD">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.MAINTAIN_FIELD">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.MAINTAIN_FIELD">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.MAINTAIN_FIELD">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.MAINTAIN_FIELD">(in module tarang-cli.validation.para_mhd)</a>
@@ -1672,9 +2084,17 @@ document.write(`
 </li>
       <li><a href="_api/TARANG/lib/force/maintain_field/index.html#TARANG.lib.force.maintain_field.maintain_field_scalar">maintain_field_scalar() (in module TARANG.lib.force.maintain_field)</a>
 </li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.maintain_mux">maintain_mux (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.maintain_mux">maintain_mux (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.maintain_mux">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.maintain_mux">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.maintain_mux">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.maintain_mux">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.maintain_mux">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.maintain_mux">(in module tarang-cli.validation.para_mhd)</a>
@@ -1696,9 +2116,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/global_fns/spectral_setup/index.html#TARANG.libp.global_fns.spectral_setup.min_radius_outside">(in module TARANG.libp.global_fns.spectral_setup)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.modes_save">modes_save (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.modes_save">modes_save (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.modes_save">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.modes_save">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.modes_save">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.modes_save">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.modes_save">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.modes_save">(in module tarang-cli.validation.para_mhd)</a>
@@ -1716,6 +2144,8 @@ document.write(`
 </li>
         <li><a href="_api/tarang-cli/live_proc/live_hydro_old/index.html#module-tarang-cli.live_proc.live_hydro_old">tarang-cli.live_proc.live_hydro_old</a>
 </li>
+        <li><a href="_api/tarang-cli/para/index.html#module-tarang-cli.para">tarang-cli.para</a>
+</li>
         <li><a href="_api/tarang-cli/paraIO/index.html#module-tarang-cli.paraIO">tarang-cli.paraIO</a>
 </li>
         <li><a href="_api/tarang-cli/pre_proc/init_modes/init_hydro/index.html#module-tarang-cli.pre_proc.init_modes.init_hydro">tarang-cli.pre_proc.init_modes.init_hydro</a>
@@ -1728,8 +2158,6 @@ document.write(`
 </li>
         <li><a href="_api/tarang-cli/sample_para/index.html#module-tarang-cli.sample_para">tarang-cli.sample_para</a>
 </li>
-        <li><a href="_api/tarang-cli/tarang_aws/index.html#module-tarang-cli.tarang_aws">tarang-cli.tarang_aws</a>
-</li>
         <li><a href="_api/tarang-cli/tarang_cli/index.html#module-tarang-cli.tarang_cli">tarang-cli.tarang_cli</a>
 </li>
         <li><a href="_api/tarang-cli/tarang_utility/index.html#module-tarang-cli.tarang_utility">tarang-cli.tarang_utility</a>
@@ -1737,6 +2165,12 @@ document.write(`
         <li><a href="_api/tarang-cli/tarangPar/index.html#module-tarang-cli.tarangPar">tarang-cli.tarangPar</a>
 </li>
         <li><a href="_api/tarang-cli/tarangSeq/index.html#module-tarang-cli.tarangSeq">tarang-cli.tarangSeq</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#module-tarang-cli.temp.sample_para_hydro">tarang-cli.temp.sample_para_hydro</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#module-tarang-cli.temp.sample_para_mhd">tarang-cli.temp.sample_para_mhd</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#module-tarang-cli.temp.sample_para_scalar">tarang-cli.temp.sample_para_scalar</a>
 </li>
         <li><a href="_api/tarang-cli/validation/bench_hydro/index.html#module-tarang-cli.validation.bench_hydro">tarang-cli.validation.bench_hydro</a>
 </li>
@@ -1861,9 +2295,13 @@ document.write(`
 <h2 id="N">N</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.Nb">Nb (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.Nb">Nb (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.Nb">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.Nb">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.Nb">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.Nb">(in module tarang-cli.validation.para_mhd)</a>
@@ -1943,9 +2381,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_setup/index.html#TARANG.libp.valid.val_setup.nprocs">(in module TARANG.libp.valid.val_setup)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.nu">nu (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.nu">nu (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.nu">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.nu">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.nu">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.nu">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.nu">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.nu">(in module tarang-cli.validation.para_mhd)</a>
@@ -1955,9 +2401,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.nu">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.nu_hyper">nu_hyper (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.nu_hyper">nu_hyper (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.nu_hyper">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.nu_hyper">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.nu_hyper">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.nu_hyper">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.nu_hyper">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.nu_hyper">(in module tarang-cli.validation.para_mhd)</a>
@@ -1967,11 +2421,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.nu_hyper">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.nu_hyper_power">nu_hyper_power (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.nu_hyper_power">nu_hyper_power (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.nu_hyper_power">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.nu_hyper_power">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.nu_hyper_power">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.nu_hyper_power">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.nu_hyper_power">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.nu_hyper_power">(in module tarang-cli.validation.para_mhd)</a>
@@ -1981,9 +2441,19 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.nu_hyper_power">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.nu_hypo">nu_hypo (in module tarang-cli.sample_para)</a>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.nu_hypo">nu_hypo (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.nu_hypo">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.nu_hypo">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.nu_hypo">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.nu_hypo">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.nu_hypo">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.nu_hypo">(in module tarang-cli.validation.para_mhd)</a>
@@ -1993,9 +2463,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.nu_hypo">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.nu_hypo_cutoff">nu_hypo_cutoff (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.nu_hypo_cutoff">nu_hypo_cutoff (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.nu_hypo_cutoff">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.nu_hypo_cutoff">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.nu_hypo_cutoff">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.nu_hypo_cutoff">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.nu_hypo_cutoff">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.nu_hypo_cutoff">(in module tarang-cli.validation.para_mhd)</a>
@@ -2005,9 +2483,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.nu_hypo_cutoff">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.nu_hypo_power">nu_hypo_power (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.nu_hypo_power">nu_hypo_power (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.nu_hypo_power">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.nu_hypo_power">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.nu_hypo_power">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.nu_hypo_power">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.nu_hypo_power">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.nu_hypo_power">(in module tarang-cli.validation.para_mhd)</a>
@@ -2017,10 +2503,18 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.nu_hypo_power">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/pre_proc/resize_field/index.html#tarang-cli.pre_proc.resize_field.Nx">Nx (in module tarang-cli.pre_proc.resize_field)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.Nx">Nx (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/pre_proc/resize_field/index.html#tarang-cli.pre_proc.resize_field.Nx">(in module tarang-cli.pre_proc.resize_field)</a>
+</li>
         <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.Nx">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.Nx">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.Nx">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.Nx">(in module tarang-cli.temp.sample_para_scalar)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.Nx">(in module tarang-cli.validation.para_hydro)</a>
 </li>
@@ -2033,10 +2527,18 @@ document.write(`
       </ul></li>
       <li><a href="_api/TARANG/libp/global_fns/Bindings/our_fft/test/index.html#TARANG.libp.global_fns.Bindings.our_fft.test.Nx_d">Nx_d (in module TARANG.libp.global_fns.Bindings.our_fft.test)</a>
 </li>
-      <li><a href="_api/tarang-cli/pre_proc/resize_field/index.html#tarang-cli.pre_proc.resize_field.Ny">Ny (in module tarang-cli.pre_proc.resize_field)</a>
+      <li><a href="_api/tarang-cli/para/index.html#id0">Ny (in module tarang-cli.para)</a>, <a href="_api/tarang-cli/para/index.html#tarang-cli.para.Ny">[1]</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/pre_proc/resize_field/index.html#tarang-cli.pre_proc.resize_field.Ny">(in module tarang-cli.pre_proc.resize_field)</a>
+</li>
         <li><a href="_api/tarang-cli/sample_para/index.html#id0">(in module tarang-cli.sample_para)</a>, <a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.Ny">[1]</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#id0">(in module tarang-cli.temp.sample_para_hydro)</a>, <a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.Ny">[1]</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#id0">(in module tarang-cli.temp.sample_para_mhd)</a>, <a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.Ny">[1]</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#id0">(in module tarang-cli.temp.sample_para_scalar)</a>, <a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.Ny">[1]</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#id0">(in module tarang-cli.validation.para_hydro)</a>, <a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.Ny">[1]</a>
 </li>
@@ -2049,10 +2551,18 @@ document.write(`
       </ul></li>
       <li><a href="_api/TARANG/libp/global_fns/Bindings/our_fft/test/index.html#TARANG.libp.global_fns.Bindings.our_fft.test.Ny_d">Ny_d (in module TARANG.libp.global_fns.Bindings.our_fft.test)</a>
 </li>
-      <li><a href="_api/tarang-cli/pre_proc/resize_field/index.html#tarang-cli.pre_proc.resize_field.Nz">Nz (in module tarang-cli.pre_proc.resize_field)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.Nz">Nz (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/pre_proc/resize_field/index.html#tarang-cli.pre_proc.resize_field.Nz">(in module tarang-cli.pre_proc.resize_field)</a>
+</li>
         <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.Nz">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.Nz">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.Nz">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.Nz">(in module tarang-cli.temp.sample_para_scalar)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.Nz">(in module tarang-cli.validation.para_hydro)</a>
 </li>
@@ -2069,9 +2579,15 @@ document.write(`
 <h2 id="O">O</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.Omega">Omega (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.Omega">Omega (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.Omega">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.Omega">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.Omega">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.Omega">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.Omega">(in module tarang-cli.validation.para_mhd)</a>
@@ -2083,9 +2599,17 @@ document.write(`
       </ul></li>
       <li><a href="_api/tarang-cli/pre_proc/resize_field/index.html#tarang-cli.pre_proc.resize_field.out_name">out_name (in module tarang-cli.pre_proc.resize_field)</a>
 </li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.output_dir">output_dir (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.output_dir">output_dir (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.output_dir">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.output_dir">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.output_dir">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.output_dir">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.output_dir">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.output_dir">(in module tarang-cli.validation.para_mhd)</a>
@@ -2115,14 +2639,14 @@ document.write(`
         <li><a href="_api/TARANG/libp/io/io_hydro/index.html#TARANG.libp.io.io_hydro.output_field_hydro">(in module TARANG.libp.io.io_hydro)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_api/TARANG/lib/io/io_mhd/index.html#TARANG.lib.io.io_mhd.output_field_mhd">output_field_mhd() (in module TARANG.lib.io.io_mhd)</a>
 
       <ul>
         <li><a href="_api/TARANG/libp/io/io_mhd/index.html#TARANG.libp.io.io_mhd.output_field_mhd">(in module TARANG.libp.io.io_mhd)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_api/TARANG/lib/io/io_scalar/index.html#TARANG.lib.io.io_scalar.output_field_scalar">output_field_scalar() (in module TARANG.lib.io.io_scalar)</a>
 </li>
       <li><a href="_api/TARANG/lib/io/io_hydro/index.html#TARANG.lib.io.io_hydro.output_glob_hydro">output_glob_hydro() (in module TARANG.lib.io.io_hydro)</a>
@@ -2165,9 +2689,17 @@ document.write(`
       </ul></li>
       <li><a href="_api/TARANG/lib/io/io_scalar/index.html#TARANG.lib.io.io_scalar.output_modes_scalar">output_modes_scalar() (in module TARANG.lib.io.io_scalar)</a>
 </li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.OUTPUT_REAL_FIELD">OUTPUT_REAL_FIELD (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.OUTPUT_REAL_FIELD">OUTPUT_REAL_FIELD (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.OUTPUT_REAL_FIELD">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.OUTPUT_REAL_FIELD">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.OUTPUT_REAL_FIELD">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.OUTPUT_REAL_FIELD">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.OUTPUT_REAL_FIELD">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.OUTPUT_REAL_FIELD">(in module tarang-cli.validation.para_mhd)</a>
@@ -2201,9 +2733,17 @@ document.write(`
         <li><a href="_api/TARANG/lib/global_fns/universal/index.html#TARANG.lib.global_fns.universal.UniversalArrays.para">(TARANG.lib.global_fns.universal.UniversalArrays attribute)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.para_dir">para_dir (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.para_dir">para_dir (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.para_dir">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.para_dir">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.para_dir">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.para_dir">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.para_dir">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.para_dir">(in module tarang-cli.validation.para_mhd)</a>
@@ -2225,9 +2765,17 @@ document.write(`
       </ul></li>
       <li><a href="_api/TARANG/libp/fields/plain_vect_field/index.html#TARANG.libp.fields.plain_vect_field.PlainVectorField">PlainVectorField (class in TARANG.libp.fields.plain_vect_field)</a>
 </li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.PLANAR_SPECTRA">PLANAR_SPECTRA (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.PLANAR_SPECTRA">PLANAR_SPECTRA (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.PLANAR_SPECTRA">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.PLANAR_SPECTRA">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.PLANAR_SPECTRA">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.PLANAR_SPECTRA">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.PLANAR_SPECTRA">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.PLANAR_SPECTRA">(in module tarang-cli.validation.para_mhd)</a>
@@ -2239,11 +2787,17 @@ document.write(`
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_api/tarang-cli/tarang_aws/index.html#tarang-cli.tarang_aws.POLL_INTERVAL">POLL_INTERVAL (in module tarang-cli.tarang_aws)</a>
-</li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.Pr">Pr (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.Pr">Pr (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.Pr">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.Pr">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.Pr">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.Pr">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.Pr">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.Pr">(in module tarang-cli.validation.para_mhd)</a>
@@ -2267,9 +2821,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/fields/pressure/index.html#TARANG.libp.fields.pressure.Pressure">(class in TARANG.libp.fields.pressure)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.PRINT_PARAMETERS">PRINT_PARAMETERS (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.PRINT_PARAMETERS">PRINT_PARAMETERS (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.PRINT_PARAMETERS">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.PRINT_PARAMETERS">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.PRINT_PARAMETERS">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.PRINT_PARAMETERS">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.PRINT_PARAMETERS">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.PRINT_PARAMETERS">(in module tarang-cli.validation.para_mhd)</a>
@@ -2293,9 +2855,17 @@ document.write(`
 <h2 id="R">R</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.Ra">Ra (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.Ra">Ra (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.Ra">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.Ra">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.Ra">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.Ra">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.Ra">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.Ra">(in module tarang-cli.validation.para_mhd)</a>
@@ -2305,9 +2875,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.Ra">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.Rac">Rac (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.Rac">Rac (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.Rac">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.Rac">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.Rac">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.Rac">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.Rac">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.Rac">(in module tarang-cli.validation.para_mhd)</a>
@@ -2317,14 +2895,10 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.Rac">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.RANDOM_FORCING_TYPE">RANDOM_FORCING_TYPE (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.RANDOM_FORCING_TYPE">RANDOM_FORCING_TYPE (in module tarang-cli.para)</a>
 
       <ul>
-        <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.RANDOM_FORCING_TYPE">(in module tarang-cli.validation.para_hydro)</a>
-</li>
-        <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.RANDOM_FORCING_TYPE">(in module tarang-cli.validation.para_mhd)</a>
-</li>
-        <li><a href="_api/TARANG/lib/valid/val_para/index.html#TARANG.lib.valid.val_para.RANDOM_FORCING_TYPE">(in module TARANG.lib.valid.val_para)</a>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.RANDOM_FORCING_TYPE">(in module tarang-cli.temp.sample_para_scalar)</a>
 </li>
       </ul></li>
       <li><a href="_api/TARANG/libp/fields/plain_vect_field/index.html#TARANG.libp.fields.plain_vect_field.rank">rank (in module TARANG.libp.fields.plain_vect_field)</a>
@@ -2369,9 +2943,17 @@ document.write(`
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.real_dtype">real_dtype (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.real_dtype">real_dtype (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.real_dtype">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.real_dtype">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.real_dtype">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.real_dtype">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.real_dtype">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.real_dtype">(in module tarang-cli.validation.para_mhd)</a>
@@ -2389,17 +2971,21 @@ document.write(`
       </ul></li>
       <li><a href="_api/TARANG/libp/global_fns/spectral_setup/index.html#TARANG.libp.global_fns.spectral_setup.redistribute">redistribute() (in module TARANG.libp.global_fns.spectral_setup)</a>
 </li>
-      <li><a href="_api/tarang-cli/tarang_aws/index.html#tarang-cli.tarang_aws.REGION">REGION (in module tarang-cli.tarang_aws)</a>
-</li>
       <li><a href="_api/tarang-cli/pre_proc/resize_field/index.html#tarang-cli.pre_proc.resize_field.resize">resize() (in module tarang-cli.pre_proc.resize_field)</a>
 
       <ul>
         <li><a href="_api/TARANG/lib/global_fns/spectral_setup/index.html#TARANG.lib.global_fns.spectral_setup.resize">(in module TARANG.lib.global_fns.spectral_setup)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.ROTATION_ENABLED">ROTATION_ENABLED (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.ROTATION_ENABLED">ROTATION_ENABLED (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.ROTATION_ENABLED">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.ROTATION_ENABLED">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.ROTATION_ENABLED">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.ROTATION_ENABLED">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.ROTATION_ENABLED">(in module tarang-cli.validation.para_mhd)</a>
@@ -2411,16 +2997,12 @@ document.write(`
       </ul></li>
       <li><a href="_api/tarang-cli/tarang_utility/index.html#tarang-cli.tarang_utility.TarangUtility.run_live_plot">run_live_plot() (tarang-cli.tarang_utility.TarangUtility static method)</a>
 </li>
-      <li><a href="_api/tarang-cli/tarang_aws/index.html#tarang-cli.tarang_aws.run_local_cli">run_local_cli() (in module tarang-cli.tarang_aws)</a>
-</li>
       <li><a href="_api/tarang-cli/tarangPar/index.html#tarang-cli.tarangPar.run_main">run_main() (in module tarang-cli.tarangPar)</a>
 
       <ul>
         <li><a href="_api/tarang-cli/tarangSeq/index.html#tarang-cli.tarangSeq.run_main">(in module tarang-cli.tarangSeq)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/tarang_aws/index.html#tarang-cli.tarang_aws.run_s3_job">run_s3_job() (in module tarang-cli.tarang_aws)</a>
-</li>
       <li><a href="_api/tarang-cli/tarangPar/index.html#tarang-cli.tarangPar.run_validation">run_validation() (in module tarang-cli.tarangPar)</a>
 </li>
       <li><a href="_api/tarang-cli/tarangPar/index.html#tarang-cli.tarangPar.run_validation_post">run_validation_post() (in module tarang-cli.tarangPar)</a>
@@ -2435,9 +3017,17 @@ document.write(`
         <li><a href="_api/tarang-cli/tarangSeq/index.html#tarang-cli.tarangSeq.run_validation_pre">(in module tarang-cli.tarangSeq)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.RUNTIME_SAVE">RUNTIME_SAVE (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.RUNTIME_SAVE">RUNTIME_SAVE (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.RUNTIME_SAVE">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.RUNTIME_SAVE">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.RUNTIME_SAVE">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.RUNTIME_SAVE">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.RUNTIME_SAVE">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.RUNTIME_SAVE">(in module tarang-cli.validation.para_mhd)</a>
@@ -2451,9 +3041,17 @@ document.write(`
 <h2 id="S">S</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.SAVE_VECPOT">SAVE_VECPOT (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.SAVE_VECPOT">SAVE_VECPOT (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.SAVE_VECPOT">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.SAVE_VECPOT">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.SAVE_VECPOT">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.SAVE_VECPOT">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.SAVE_VECPOT">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.SAVE_VECPOT">(in module tarang-cli.validation.para_mhd)</a>
@@ -2463,9 +3061,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/valid/val_para/index.html#TARANG.libp.valid.val_para.SAVE_VECPOT">(in module TARANG.libp.valid.val_para)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.SAVE_VORTICITY">SAVE_VORTICITY (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.SAVE_VORTICITY">SAVE_VORTICITY (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.SAVE_VORTICITY">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.SAVE_VORTICITY">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.SAVE_VORTICITY">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.SAVE_VORTICITY">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.SAVE_VORTICITY">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.SAVE_VORTICITY">(in module tarang-cli.validation.para_mhd)</a>
@@ -2485,6 +3091,8 @@ document.write(`
         <li><a href="_api/TARANG/libp/fields/scalar_field/index.html#TARANG.libp.fields.scalar_field.ScalarField">(class in TARANG.libp.fields.scalar_field)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_api/TARANG/lib/fields/pressure/index.html#TARANG.lib.fields.pressure.Pressure.set_arrays">set_arrays() (TARANG.lib.fields.pressure.Pressure method)</a>
 
       <ul>
@@ -2505,8 +3113,6 @@ document.write(`
         <li><a href="_api/TARANG/libp/global_fns/universal/index.html#TARANG.libp.global_fns.universal.UniversalArrays.set_arrays">(TARANG.libp.global_fns.universal.UniversalArrays method)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_api/TARANG/lib/global_fns/universal/index.html#TARANG.lib.global_fns.universal.UniversalArrays.set_exp_arrays">set_exp_arrays() (TARANG.lib.global_fns.universal.UniversalArrays method)</a>
 
       <ul>
@@ -2565,9 +3171,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/global_fns/universal/index.html#TARANG.libp.global_fns.universal.UniversalArrays.t_ekTk_save">(TARANG.libp.global_fns.universal.UniversalArrays attribute)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.t_eps">t_eps (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.t_eps">t_eps (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.t_eps">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.t_eps">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.t_eps">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.t_eps">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.t_eps">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.t_eps">(in module tarang-cli.validation.para_mhd)</a>
@@ -2583,9 +3197,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/global_fns/universal/index.html#TARANG.libp.global_fns.universal.UniversalArrays.t_field_save">(TARANG.libp.global_fns.universal.UniversalArrays attribute)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.t_final">t_final (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.t_final">t_final (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.t_final">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.t_final">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.t_final">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.t_final">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.t_final">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.t_final">(in module tarang-cli.validation.para_mhd)</a>
@@ -2601,9 +3223,17 @@ document.write(`
         <li><a href="_api/TARANG/libp/global_fns/universal/index.html#TARANG.libp.global_fns.universal.UniversalArrays.t_glob_energy_print">(TARANG.libp.global_fns.universal.UniversalArrays attribute)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.t_initial">t_initial (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.t_initial">t_initial (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.t_initial">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.t_initial">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.t_initial">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.t_initial">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.t_initial">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.t_initial">(in module tarang-cli.validation.para_mhd)</a>
@@ -2643,6 +3273,13 @@ document.write(`
 
       <ul>
         <li><a href="_api/tarang-cli/live_proc/live_hydro_old/index.html#module-tarang-cli.live_proc.live_hydro_old">module</a>
+</li>
+      </ul></li>
+      <li>
+    tarang-cli.para
+
+      <ul>
+        <li><a href="_api/tarang-cli/para/index.html#module-tarang-cli.para">module</a>
 </li>
       </ul></li>
       <li>
@@ -2688,13 +3325,6 @@ document.write(`
 </li>
       </ul></li>
       <li>
-    tarang-cli.tarang_aws
-
-      <ul>
-        <li><a href="_api/tarang-cli/tarang_aws/index.html#module-tarang-cli.tarang_aws">module</a>
-</li>
-      </ul></li>
-      <li>
     tarang-cli.tarang_cli
 
       <ul>
@@ -2720,6 +3350,27 @@ document.write(`
 
       <ul>
         <li><a href="_api/tarang-cli/tarangSeq/index.html#module-tarang-cli.tarangSeq">module</a>
+</li>
+      </ul></li>
+      <li>
+    tarang-cli.temp.sample_para_hydro
+
+      <ul>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#module-tarang-cli.temp.sample_para_hydro">module</a>
+</li>
+      </ul></li>
+      <li>
+    tarang-cli.temp.sample_para_mhd
+
+      <ul>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#module-tarang-cli.temp.sample_para_mhd">module</a>
+</li>
+      </ul></li>
+      <li>
+    tarang-cli.temp.sample_para_scalar
+
+      <ul>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#module-tarang-cli.temp.sample_para_scalar">module</a>
 </li>
       </ul></li>
       <li>
@@ -2932,6 +3583,8 @@ document.write(`
         <li><a href="_api/TARANG/libp/fields/plain_vect_field/index.html#module-TARANG.libp.fields.plain_vect_field">module</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     TARANG.libp.fields.pressure
 
@@ -2953,8 +3606,6 @@ document.write(`
         <li><a href="_api/TARANG/libp/fields/vect_field/index.html#module-TARANG.libp.fields.vect_field">module</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     TARANG.libp.force.compute_force_hydro
 
@@ -3110,9 +3761,7 @@ document.write(`
       </ul></li>
       <li><a href="_api/tarang-cli/tarang_utility/index.html#tarang-cli.tarang_utility.TarangUtility">TarangUtility (class in tarang-cli.tarang_utility)</a>
 </li>
-      <li><a href="_api/TARANG/lib/cases/cases_hydro/index.html#TARANG.lib.cases.cases_hydro.taylor_green2D">taylor_green2D() (in module TARANG.lib.cases.cases_hydro)</a>
-</li>
-      <li><a href="_api/TARANG/lib/cases/cases_hydro/index.html#TARANG.lib.cases.cases_hydro.taylor_green3D">taylor_green3D() (in module TARANG.lib.cases.cases_hydro)</a>
+      <li><a href="_api/TARANG/lib/cases/cases_hydro/index.html#TARANG.lib.cases.cases_hydro.taylor_green">taylor_green() (in module TARANG.lib.cases.cases_hydro)</a>
 </li>
       <li><a href="_api/TARANG/lib/fields/scalar_field/index.html#TARANG.lib.fields.scalar_field.ScalarField.Tcopy_to_T">Tcopy_to_T() (TARANG.lib.fields.scalar_field.ScalarField method)</a>
 
@@ -3248,9 +3897,17 @@ document.write(`
       </ul></li>
       <li><a href="_api/TARANG/lib/time_advance/time_advance_scalar/index.html#TARANG.lib.time_advance.time_advance_scalar.time_advance_RK4_scalar">time_advance_RK4_scalar() (in module TARANG.lib.time_advance.time_advance_scalar)</a>
 </li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.time_scheme">time_scheme (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.time_scheme">time_scheme (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.time_scheme">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.time_scheme">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.time_scheme">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.time_scheme">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.time_scheme">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.time_scheme">(in module tarang-cli.validation.para_mhd)</a>
@@ -3291,6 +3948,10 @@ document.write(`
 </li>
       </ul></li>
       <li><a href="_api/tarang-cli/live_proc/live_hydro/index.html#tarang-cli.live_proc.live_hydro.toggle_axis_scale">toggle_axis_scale() (in module tarang-cli.live_proc.live_hydro)</a>
+</li>
+      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.toner_tu_alpha">toner_tu_alpha (in module tarang-cli.sample_para)</a>
+</li>
+      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.toner_tu_beta">toner_tu_beta (in module tarang-cli.sample_para)</a>
 </li>
       <li><a href="_api/TARANG/lib/fields/scalar_field/index.html#TARANG.lib.fields.scalar_field.ScalarField.tot_energy">tot_energy (TARANG.lib.fields.scalar_field.ScalarField attribute)</a>, <a href="_api/TARANG/lib/fields/scalar_field/index.html#id4">[1]</a>
 
@@ -3362,31 +4023,37 @@ document.write(`
         <li><a href="_api/TARANG/libp/global_fns/universal/index.html#TARANG.libp.global_fns.universal.UniversalArrays">(class in TARANG.libp.global_fns.universal)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_api/TARANG/lib/fields/vect_field/index.html#TARANG.lib.fields.vect_field.VectorField.update2D_Vkz">update2D_Vkz() (TARANG.lib.fields.vect_field.VectorField method)</a>
 
       <ul>
         <li><a href="_api/TARANG/libp/fields/vect_field/index.html#TARANG.libp.fields.vect_field.VectorField.update2D_Vkz">(TARANG.libp.fields.vect_field.VectorField method)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_api/TARANG/lib/fields/vect_field/index.html#TARANG.lib.fields.vect_field.VectorField.update3D_Vkz">update3D_Vkz() (TARANG.lib.fields.vect_field.VectorField method)</a>
 
       <ul>
         <li><a href="_api/TARANG/libp/fields/vect_field/index.html#TARANG.libp.fields.vect_field.VectorField.update3D_Vkz">(TARANG.libp.fields.vect_field.VectorField method)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/tarang_aws/index.html#tarang-cli.tarang_aws.update_job_status">update_job_status() (in module tarang-cli.tarang_aws)</a>
-</li>
       <li><a href="_api/TARANG/lib/fields/vect_field/index.html#TARANG.lib.fields.vect_field.VectorField.ur">ur (TARANG.lib.fields.vect_field.VectorField attribute)</a>, <a href="_api/TARANG/lib/fields/vect_field/index.html#id21">[1]</a>
 
       <ul>
         <li><a href="_api/TARANG/libp/fields/vect_field/index.html#TARANG.libp.fields.vect_field.VectorField.ur">(TARANG.libp.fields.vect_field.VectorField attribute)</a>
 </li>
       </ul></li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.USE_BINDING">USE_BINDING (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.USE_BINDING">USE_BINDING (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.USE_BINDING">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.USE_BINDING">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.USE_BINDING">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.USE_BINDING">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.USE_BINDING">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.USE_BINDING">(in module tarang-cli.validation.para_mhd)</a>
@@ -3416,9 +4083,17 @@ document.write(`
       </ul></li>
       <li><a href="_api/TARANG/lib/valid/val_init/index.html#TARANG.lib.valid.val_init.val_field_scalar">val_field_scalar() (in module TARANG.lib.valid.val_init)</a>
 </li>
-      <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.VALIDATE_SOLVER">VALIDATE_SOLVER (in module tarang-cli.sample_para)</a>
+      <li><a href="_api/tarang-cli/para/index.html#tarang-cli.para.VALIDATE_SOLVER">VALIDATE_SOLVER (in module tarang-cli.para)</a>
 
       <ul>
+        <li><a href="_api/tarang-cli/sample_para/index.html#tarang-cli.sample_para.VALIDATE_SOLVER">(in module tarang-cli.sample_para)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_hydro/index.html#tarang-cli.temp.sample_para_hydro.VALIDATE_SOLVER">(in module tarang-cli.temp.sample_para_hydro)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_mhd/index.html#tarang-cli.temp.sample_para_mhd.VALIDATE_SOLVER">(in module tarang-cli.temp.sample_para_mhd)</a>
+</li>
+        <li><a href="_api/tarang-cli/temp/sample_para_scalar/index.html#tarang-cli.temp.sample_para_scalar.VALIDATE_SOLVER">(in module tarang-cli.temp.sample_para_scalar)</a>
+</li>
         <li><a href="_api/tarang-cli/validation/para_hydro/index.html#tarang-cli.validation.para_hydro.VALIDATE_SOLVER">(in module tarang-cli.validation.para_hydro)</a>
 </li>
         <li><a href="_api/tarang-cli/validation/para_mhd/index.html#tarang-cli.validation.para_mhd.VALIDATE_SOLVER">(in module tarang-cli.validation.para_mhd)</a>
@@ -3456,14 +4131,14 @@ document.write(`
         <li><a href="_api/TARANG/libp/fields/vect_field/index.html#TARANG.libp.fields.vect_field.VectorField.Vkx_mode">(TARANG.libp.fields.vect_field.VectorField attribute)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_api/TARANG/lib/fields/vect_field/index.html#TARANG.lib.fields.vect_field.VectorField.Vkx_modes_t">Vkx_modes_t (TARANG.lib.fields.vect_field.VectorField attribute)</a>, <a href="_api/TARANG/lib/fields/vect_field/index.html#id22">[1]</a>
 
       <ul>
         <li><a href="_api/TARANG/libp/fields/vect_field/index.html#TARANG.libp.fields.vect_field.VectorField.Vkx_modes_t">(TARANG.libp.fields.vect_field.VectorField attribute)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_api/TARANG/lib/fields/vect_field/index.html#TARANG.lib.fields.vect_field.VectorField.Vky">Vky (TARANG.lib.fields.vect_field.VectorField attribute)</a>, <a href="_api/TARANG/lib/fields/vect_field/index.html#id1">[1]</a>
 
       <ul>
@@ -3528,14 +4203,6 @@ document.write(`
         <li><a href="_api/TARANG/libp/fields/vect_field/index.html#TARANG.libp.fields.vect_field.VectorField.Vz">(TARANG.libp.fields.vect_field.VectorField attribute)</a>
 </li>
       </ul></li>
-  </ul></td>
-</tr></table>
-
-<h2 id="W">W</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_api/tarang-cli/tarang_aws/index.html#tarang-cli.tarang_aws.WORKER_START_TIME">WORKER_START_TIME (in module tarang-cli.tarang_aws)</a>
-</li>
   </ul></td>
 </tr></table>
 

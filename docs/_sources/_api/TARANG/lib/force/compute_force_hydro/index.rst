@@ -16,6 +16,7 @@ Functions
    TARANG.lib.force.compute_force_hydro.compute_rotation
    TARANG.lib.force.compute_force_hydro.craya_to_cartesian
    TARANG.lib.force.compute_force_hydro.craya_to_cartesian_old
+   TARANG.lib.force.compute_force_hydro.compute_taylor_green_forcing
    TARANG.lib.force.compute_force_hydro.compute_toner_tu_forcing
 
 
@@ -54,13 +55,22 @@ Module Contents
 
 .. py:function:: craya_to_cartesian_old(u1, Vkx, Vkz, k_mag, i, j)
 
-.. py:function:: compute_toner_tu_forcing(para, U)
+.. py:function:: compute_taylor_green_forcing(para, U)
 
-   Computes Toner-Tu active matter forcing in the Mean-Field approximation.
+   Computes spectral forcing for Taylor-Green vortex.
 
-   Equation:
-       F = (alpha - beta * <|v|^2>) * v
+   3D Forcing: F = F0 * [sin(x)cos(y)cos(z), -cos(x)sin(y)cos(z), 0]
+   2D Forcing: F = F0 * [sin(x)cos(y), -cos(x)sin(y)]
 
-   This drives the system towards a mean squared velocity of alpha/beta.
+
+.. py:function:: compute_toner_tu_forcing(para, U, univ)
+
+   Computes Toner-Tu active matter forcing (Local / "Actual" term).
+
+   Equation (Real Space):
+       F = (alpha - beta * |v|^2) * v
+
+   This requires computing the cubic nonlinearity in real space
+   and transforming it to spectral space.
 
 

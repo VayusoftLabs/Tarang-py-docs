@@ -63,9 +63,15 @@ Attributes
    tarang-cli.sample_para.kappa_hyper_power
    tarang-cli.sample_para.FORCING_ENABLED
    tarang-cli.sample_para.FORCING_SCHEME
-   tarang-cli.sample_para.RANDOM_FORCING_TYPE
    tarang-cli.sample_para.forcing_range
-   tarang-cli.sample_para.injections
+   tarang-cli.sample_para.injection_u
+   tarang-cli.sample_para.injection_h
+   tarang-cli.sample_para.toner_tu_alpha
+   tarang-cli.sample_para.toner_tu_beta
+   tarang-cli.sample_para.injection_plus
+   tarang-cli.sample_para.injection_minus
+   tarang-cli.sample_para.injection_vector_potential
+   tarang-cli.sample_para.injection_magnetic_helicity
    tarang-cli.sample_para.BUOYANCY_ENABLED
    tarang-cli.sample_para.Nb
    tarang-cli.sample_para.ROTATION_ENABLED
@@ -168,15 +174,15 @@ Module Contents
 
 
 .. py:data:: Nx
-   :value: 128
+   :value: 1024
 
 
 .. py:data:: Ny
-   :value: 128
+   :value: 1
 
 
 .. py:data:: Nz
-   :value: 128
+   :value: 1024
 
 
 .. py:data:: Ny
@@ -284,23 +290,47 @@ Module Contents
 
 
 .. py:data:: FORCING_ENABLED
-   :value: False
+   :value: True
 
 
 .. py:data:: FORCING_SCHEME
-   :value: 'random'
-
-
-.. py:data:: RANDOM_FORCING_TYPE
-   :value: 'u'
+   :value: 'toner_tu'
 
 
 .. py:data:: forcing_range
    :value: [2, 3]
 
 
-.. py:data:: injections
-   :value: [0, 0, 0]
+.. py:data:: injection_u
+   :value: 0.1
+
+
+.. py:data:: injection_h
+   :value: 0.01
+
+
+.. py:data:: toner_tu_alpha
+   :value: 1.0
+
+
+.. py:data:: toner_tu_beta
+   :value: 1.0
+
+
+.. py:data:: injection_plus
+   :value: 0.1
+
+
+.. py:data:: injection_minus
+   :value: 0.1
+
+
+.. py:data:: injection_vector_potential
+   :value: 0.01
+
+
+.. py:data:: injection_magnetic_helicity
+   :value: 0.01
 
 
 .. py:data:: BUOYANCY_ENABLED
@@ -344,7 +374,7 @@ Module Contents
 
 
 .. py:data:: FIXED_DT
-   :value: False
+   :value: True
 
 
 .. py:data:: Courant_no
@@ -360,7 +390,7 @@ Module Contents
 
 
 .. py:data:: RUNTIME_SAVE
-   :value: False
+   :value: True
 
 
 .. py:data:: LIVE_PLOT

@@ -16,12 +16,12 @@ Attributes
    TARANG.lib.valid.val_para.kind
    TARANG.lib.valid.val_para.INPUT_SET_CASE
    TARANG.lib.valid.val_para.input_case
-   TARANG.lib.valid.val_para.INPUT_FROM_FILE
-   TARANG.lib.valid.val_para.INPUT_REAL_FIELD
    TARANG.lib.valid.val_para.INPUT_ELSASSER
+   TARANG.lib.valid.val_para.INPUT_REAL_FIELD
+   TARANG.lib.valid.val_para.OUTPUT_REAL_FIELD
+   TARANG.lib.valid.val_para.INPUT_FROM_FILE
    TARANG.lib.valid.val_para.input_file_name
    TARANG.lib.valid.val_para.input_dir
-   TARANG.lib.valid.val_para.OUTPUT_REAL_FIELD
    TARANG.lib.valid.val_para.output_dir
    TARANG.lib.valid.val_para.dimension
    TARANG.lib.valid.val_para.Nx
@@ -56,9 +56,13 @@ Attributes
    TARANG.lib.valid.val_para.kappa_hyper_power
    TARANG.lib.valid.val_para.FORCING_ENABLED
    TARANG.lib.valid.val_para.FORCING_SCHEME
-   TARANG.lib.valid.val_para.RANDOM_FORCING_TYPE
    TARANG.lib.valid.val_para.forcing_range
-   TARANG.lib.valid.val_para.injections
+   TARANG.lib.valid.val_para.injection_u
+   TARANG.lib.valid.val_para.injection_h
+   TARANG.lib.valid.val_para.injection_plus
+   TARANG.lib.valid.val_para.injection_minus
+   TARANG.lib.valid.val_para.injection_vector_potential
+   TARANG.lib.valid.val_para.injection_magnetic_helicity
    TARANG.lib.valid.val_para.BUOYANCY_ENABLED
    TARANG.lib.valid.val_para.Nb
    TARANG.lib.valid.val_para.ROTATION_ENABLED
@@ -82,12 +86,16 @@ Attributes
    TARANG.lib.valid.val_para.modes_save
    TARANG.lib.valid.val_para.iter_field_save_start
    TARANG.lib.valid.val_para.iter_field_save_inter
+   TARANG.lib.valid.val_para.iter_field_save_buffer
    TARANG.lib.valid.val_para.iter_glob_energy_print_start
    TARANG.lib.valid.val_para.iter_glob_energy_print_inter
+   TARANG.lib.valid.val_para.iter_glob_save_buffer
    TARANG.lib.valid.val_para.iter_ekTk_save_start
    TARANG.lib.valid.val_para.iter_ekTk_save_inter
+   TARANG.lib.valid.val_para.iter_ekTk_save_buffer
    TARANG.lib.valid.val_para.iter_modes_save_start
    TARANG.lib.valid.val_para.iter_modes_save_inter
+   TARANG.lib.valid.val_para.iter_modes_save_buffer
    TARANG.lib.valid.val_para.VALIDATE_SOLVER
 
 
@@ -95,7 +103,7 @@ Module Contents
 ---------------
 
 .. py:data:: device
-   :value: 'GPU'
+   :value: 'CPU'
 
 
 .. py:data:: device_rank
@@ -122,7 +130,7 @@ Module Contents
    :value: 'validation'
 
 
-.. py:data:: INPUT_FROM_FILE
+.. py:data:: INPUT_ELSASSER
    :value: False
 
 
@@ -130,7 +138,11 @@ Module Contents
    :value: False
 
 
-.. py:data:: INPUT_ELSASSER
+.. py:data:: OUTPUT_REAL_FIELD
+   :value: False
+
+
+.. py:data:: INPUT_FROM_FILE
    :value: False
 
 
@@ -140,10 +152,6 @@ Module Contents
 
 .. py:data:: input_dir
    :value: None
-
-
-.. py:data:: OUTPUT_REAL_FIELD
-   :value: False
 
 
 .. py:data:: output_dir
@@ -274,16 +282,32 @@ Module Contents
    :value: 'random'
 
 
-.. py:data:: RANDOM_FORCING_TYPE
-   :value: 'u'
-
-
 .. py:data:: forcing_range
    :value: [4, 6]
 
 
-.. py:data:: injections
-   :value: [0, 0, 0]
+.. py:data:: injection_u
+   :value: 0
+
+
+.. py:data:: injection_h
+   :value: 0
+
+
+.. py:data:: injection_plus
+   :value: 0
+
+
+.. py:data:: injection_minus
+   :value: 0
+
+
+.. py:data:: injection_vector_potential
+   :value: 0
+
+
+.. py:data:: injection_magnetic_helicity
+   :value: 0
 
 
 .. py:data:: BUOYANCY_ENABLED
@@ -378,12 +402,20 @@ Module Contents
    :value: 10
 
 
+.. py:data:: iter_field_save_buffer
+   :value: 1
+
+
 .. py:data:: iter_glob_energy_print_start
    :value: 0
 
 
 .. py:data:: iter_glob_energy_print_inter
    :value: 1
+
+
+.. py:data:: iter_glob_save_buffer
+   :value: 100
 
 
 .. py:data:: iter_ekTk_save_start
@@ -394,11 +426,19 @@ Module Contents
    :value: 1
 
 
+.. py:data:: iter_ekTk_save_buffer
+   :value: 100
+
+
 .. py:data:: iter_modes_save_start
    :value: 1000
 
 
 .. py:data:: iter_modes_save_inter
+   :value: 1
+
+
+.. py:data:: iter_modes_save_buffer
    :value: 1
 
 

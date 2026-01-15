@@ -63,7 +63,6 @@ Attributes
    tarang-cli.validation.para_hydro.kappa_hyper_power
    tarang-cli.validation.para_hydro.FORCING_ENABLED
    tarang-cli.validation.para_hydro.FORCING_SCHEME
-   tarang-cli.validation.para_hydro.RANDOM_FORCING_TYPE
    tarang-cli.validation.para_hydro.forcing_range
    tarang-cli.validation.para_hydro.injections
    tarang-cli.validation.para_hydro.BUOYANCY_ENABLED
@@ -285,10 +284,6 @@ Module Contents
 
 .. py:data:: FORCING_SCHEME
    :value: 'random'
-
-
-.. py:data:: RANDOM_FORCING_TYPE
-   :value: 'u'
 
 
 .. py:data:: forcing_range

@@ -10,8 +10,7 @@ Functions
 .. autoapisummary::
 
    TARANG.lib.cases.cases_hydro.case_handler
-   TARANG.lib.cases.cases_hydro.taylor_green3D
-   TARANG.lib.cases.cases_hydro.taylor_green2D
+   TARANG.lib.cases.cases_hydro.taylor_green
    TARANG.lib.cases.cases_hydro.benchmarking
 
 
@@ -28,9 +27,7 @@ Module Contents
    :rtype: None
 
 
-.. py:function:: taylor_green3D(para, U)
-
-.. py:function:: taylor_green2D(para, U)
+.. py:function:: taylor_green(para, U)
 
 .. py:function:: benchmarking(para, U)
 

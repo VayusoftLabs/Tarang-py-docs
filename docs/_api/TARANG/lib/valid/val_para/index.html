@@ -30,6 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -40,6 +41,8 @@
     <script src="../../../../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '_api/TARANG/lib/valid/val_para/index';</script>
     <script src="../../../../../_static/custom.js"></script>
@@ -325,12 +328,12 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.kind"><code class="docutils literal notranslate"><span class="pre">kind</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.INPUT_SET_CASE"><code class="docutils literal notranslate"><span class="pre">INPUT_SET_CASE</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.input_case"><code class="docutils literal notranslate"><span class="pre">input_case</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.INPUT_FROM_FILE"><code class="docutils literal notranslate"><span class="pre">INPUT_FROM_FILE</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.INPUT_REAL_FIELD"><code class="docutils literal notranslate"><span class="pre">INPUT_REAL_FIELD</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.INPUT_ELSASSER"><code class="docutils literal notranslate"><span class="pre">INPUT_ELSASSER</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.INPUT_REAL_FIELD"><code class="docutils literal notranslate"><span class="pre">INPUT_REAL_FIELD</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.OUTPUT_REAL_FIELD"><code class="docutils literal notranslate"><span class="pre">OUTPUT_REAL_FIELD</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.INPUT_FROM_FILE"><code class="docutils literal notranslate"><span class="pre">INPUT_FROM_FILE</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.input_file_name"><code class="docutils literal notranslate"><span class="pre">input_file_name</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.input_dir"><code class="docutils literal notranslate"><span class="pre">input_dir</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.OUTPUT_REAL_FIELD"><code class="docutils literal notranslate"><span class="pre">OUTPUT_REAL_FIELD</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.output_dir"><code class="docutils literal notranslate"><span class="pre">output_dir</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.dimension"><code class="docutils literal notranslate"><span class="pre">dimension</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.Nx"><code class="docutils literal notranslate"><span class="pre">Nx</span></code></a></li>
@@ -365,9 +368,13 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.kappa_hyper_power"><code class="docutils literal notranslate"><span class="pre">kappa_hyper_power</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.FORCING_ENABLED"><code class="docutils literal notranslate"><span class="pre">FORCING_ENABLED</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.FORCING_SCHEME"><code class="docutils literal notranslate"><span class="pre">FORCING_SCHEME</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.RANDOM_FORCING_TYPE"><code class="docutils literal notranslate"><span class="pre">RANDOM_FORCING_TYPE</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.forcing_range"><code class="docutils literal notranslate"><span class="pre">forcing_range</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.injections"><code class="docutils literal notranslate"><span class="pre">injections</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.injection_u"><code class="docutils literal notranslate"><span class="pre">injection_u</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.injection_h"><code class="docutils literal notranslate"><span class="pre">injection_h</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.injection_plus"><code class="docutils literal notranslate"><span class="pre">injection_plus</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.injection_minus"><code class="docutils literal notranslate"><span class="pre">injection_minus</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.injection_vector_potential"><code class="docutils literal notranslate"><span class="pre">injection_vector_potential</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.injection_magnetic_helicity"><code class="docutils literal notranslate"><span class="pre">injection_magnetic_helicity</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.BUOYANCY_ENABLED"><code class="docutils literal notranslate"><span class="pre">BUOYANCY_ENABLED</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.Nb"><code class="docutils literal notranslate"><span class="pre">Nb</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.ROTATION_ENABLED"><code class="docutils literal notranslate"><span class="pre">ROTATION_ENABLED</span></code></a></li>
@@ -391,12 +398,16 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.modes_save"><code class="docutils literal notranslate"><span class="pre">modes_save</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_field_save_start"><code class="docutils literal notranslate"><span class="pre">iter_field_save_start</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_field_save_inter"><code class="docutils literal notranslate"><span class="pre">iter_field_save_inter</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_field_save_buffer"><code class="docutils literal notranslate"><span class="pre">iter_field_save_buffer</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_glob_energy_print_start"><code class="docutils literal notranslate"><span class="pre">iter_glob_energy_print_start</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_glob_energy_print_inter"><code class="docutils literal notranslate"><span class="pre">iter_glob_energy_print_inter</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_glob_save_buffer"><code class="docutils literal notranslate"><span class="pre">iter_glob_save_buffer</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_ekTk_save_start"><code class="docutils literal notranslate"><span class="pre">iter_ekTk_save_start</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_ekTk_save_inter"><code class="docutils literal notranslate"><span class="pre">iter_ekTk_save_inter</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_ekTk_save_buffer"><code class="docutils literal notranslate"><span class="pre">iter_ekTk_save_buffer</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_modes_save_start"><code class="docutils literal notranslate"><span class="pre">iter_modes_save_start</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_modes_save_inter"><code class="docutils literal notranslate"><span class="pre">iter_modes_save_inter</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_modes_save_buffer"><code class="docutils literal notranslate"><span class="pre">iter_modes_save_buffer</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.VALIDATE_SOLVER"><code class="docutils literal notranslate"><span class="pre">VALIDATE_SOLVER</span></code></a></li>
 </ul>
 </li>
@@ -438,22 +449,22 @@ document.write(`
 <tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.input_case" title="TARANG.lib.valid.val_para.input_case"><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_case</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.INPUT_FROM_FILE" title="TARANG.lib.valid.val_para.INPUT_FROM_FILE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">INPUT_FROM_FILE</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.INPUT_ELSASSER" title="TARANG.lib.valid.val_para.INPUT_ELSASSER"><code class="xref py py-obj docutils literal notranslate"><span class="pre">INPUT_ELSASSER</span></code></a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.INPUT_REAL_FIELD" title="TARANG.lib.valid.val_para.INPUT_REAL_FIELD"><code class="xref py py-obj docutils literal notranslate"><span class="pre">INPUT_REAL_FIELD</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.INPUT_ELSASSER" title="TARANG.lib.valid.val_para.INPUT_ELSASSER"><code class="xref py py-obj docutils literal notranslate"><span class="pre">INPUT_ELSASSER</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.OUTPUT_REAL_FIELD" title="TARANG.lib.valid.val_para.OUTPUT_REAL_FIELD"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OUTPUT_REAL_FIELD</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.input_file_name" title="TARANG.lib.valid.val_para.input_file_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_file_name</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.INPUT_FROM_FILE" title="TARANG.lib.valid.val_para.INPUT_FROM_FILE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">INPUT_FROM_FILE</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.input_dir" title="TARANG.lib.valid.val_para.input_dir"><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_dir</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.input_file_name" title="TARANG.lib.valid.val_para.input_file_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_file_name</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.OUTPUT_REAL_FIELD" title="TARANG.lib.valid.val_para.OUTPUT_REAL_FIELD"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OUTPUT_REAL_FIELD</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.input_dir" title="TARANG.lib.valid.val_para.input_dir"><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_dir</span></code></a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.output_dir" title="TARANG.lib.valid.val_para.output_dir"><code class="xref py py-obj docutils literal notranslate"><span class="pre">output_dir</span></code></a></p></td>
@@ -558,13 +569,25 @@ document.write(`
 <tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.FORCING_SCHEME" title="TARANG.lib.valid.val_para.FORCING_SCHEME"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FORCING_SCHEME</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.RANDOM_FORCING_TYPE" title="TARANG.lib.valid.val_para.RANDOM_FORCING_TYPE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RANDOM_FORCING_TYPE</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.forcing_range" title="TARANG.lib.valid.val_para.forcing_range"><code class="xref py py-obj docutils literal notranslate"><span class="pre">forcing_range</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.forcing_range" title="TARANG.lib.valid.val_para.forcing_range"><code class="xref py py-obj docutils literal notranslate"><span class="pre">forcing_range</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.injection_u" title="TARANG.lib.valid.val_para.injection_u"><code class="xref py py-obj docutils literal notranslate"><span class="pre">injection_u</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.injections" title="TARANG.lib.valid.val_para.injections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">injections</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.injection_h" title="TARANG.lib.valid.val_para.injection_h"><code class="xref py py-obj docutils literal notranslate"><span class="pre">injection_h</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.injection_plus" title="TARANG.lib.valid.val_para.injection_plus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">injection_plus</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.injection_minus" title="TARANG.lib.valid.val_para.injection_minus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">injection_minus</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.injection_vector_potential" title="TARANG.lib.valid.val_para.injection_vector_potential"><code class="xref py py-obj docutils literal notranslate"><span class="pre">injection_vector_potential</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.injection_magnetic_helicity" title="TARANG.lib.valid.val_para.injection_magnetic_helicity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">injection_magnetic_helicity</span></code></a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.BUOYANCY_ENABLED" title="TARANG.lib.valid.val_para.BUOYANCY_ENABLED"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BUOYANCY_ENABLED</span></code></a></p></td>
@@ -636,10 +659,16 @@ document.write(`
 <tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.iter_field_save_inter" title="TARANG.lib.valid.val_para.iter_field_save_inter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_field_save_inter</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.iter_glob_energy_print_start" title="TARANG.lib.valid.val_para.iter_glob_energy_print_start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_glob_energy_print_start</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.iter_field_save_buffer" title="TARANG.lib.valid.val_para.iter_field_save_buffer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_field_save_buffer</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.iter_glob_energy_print_inter" title="TARANG.lib.valid.val_para.iter_glob_energy_print_inter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_glob_energy_print_inter</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.iter_glob_energy_print_start" title="TARANG.lib.valid.val_para.iter_glob_energy_print_start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_glob_energy_print_start</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.iter_glob_energy_print_inter" title="TARANG.lib.valid.val_para.iter_glob_energy_print_inter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_glob_energy_print_inter</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.iter_glob_save_buffer" title="TARANG.lib.valid.val_para.iter_glob_save_buffer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_glob_save_buffer</span></code></a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.iter_ekTk_save_start" title="TARANG.lib.valid.val_para.iter_ekTk_save_start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_ekTk_save_start</span></code></a></p></td>
@@ -648,10 +677,16 @@ document.write(`
 <tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.iter_ekTk_save_inter" title="TARANG.lib.valid.val_para.iter_ekTk_save_inter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_ekTk_save_inter</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.iter_modes_save_start" title="TARANG.lib.valid.val_para.iter_modes_save_start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_modes_save_start</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.iter_ekTk_save_buffer" title="TARANG.lib.valid.val_para.iter_ekTk_save_buffer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_ekTk_save_buffer</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.iter_modes_save_inter" title="TARANG.lib.valid.val_para.iter_modes_save_inter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_modes_save_inter</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.iter_modes_save_start" title="TARANG.lib.valid.val_para.iter_modes_save_start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_modes_save_start</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.iter_modes_save_inter" title="TARANG.lib.valid.val_para.iter_modes_save_inter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_modes_save_inter</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.iter_modes_save_buffer" title="TARANG.lib.valid.val_para.iter_modes_save_buffer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iter_modes_save_buffer</span></code></a></p></td>
 <td><p></p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#TARANG.lib.valid.val_para.VALIDATE_SOLVER" title="TARANG.lib.valid.val_para.VALIDATE_SOLVER"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VALIDATE_SOLVER</span></code></a></p></td>
@@ -665,7 +700,7 @@ document.write(`
 <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">#</a></h2>
 <dl class="py data">
 <dt class="sig sig-object py" id="TARANG.lib.valid.val_para.device">
-<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">device</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'GPU'</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.device" title="Link to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">device</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'CPU'</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.device" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py data">
@@ -699,8 +734,8 @@ document.write(`
 <dd></dd></dl>
 
 <dl class="py data">
-<dt class="sig sig-object py" id="TARANG.lib.valid.val_para.INPUT_FROM_FILE">
-<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">INPUT_FROM_FILE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.INPUT_FROM_FILE" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="TARANG.lib.valid.val_para.INPUT_ELSASSER">
+<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">INPUT_ELSASSER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.INPUT_ELSASSER" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py data">
@@ -709,8 +744,13 @@ document.write(`
 <dd></dd></dl>
 
 <dl class="py data">
-<dt class="sig sig-object py" id="TARANG.lib.valid.val_para.INPUT_ELSASSER">
-<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">INPUT_ELSASSER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.INPUT_ELSASSER" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="TARANG.lib.valid.val_para.OUTPUT_REAL_FIELD">
+<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">OUTPUT_REAL_FIELD</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.OUTPUT_REAL_FIELD" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="TARANG.lib.valid.val_para.INPUT_FROM_FILE">
+<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">INPUT_FROM_FILE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.INPUT_FROM_FILE" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py data">
@@ -721,11 +761,6 @@ document.write(`
 <dl class="py data">
 <dt class="sig sig-object py" id="TARANG.lib.valid.val_para.input_dir">
 <span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">input_dir</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.input_dir" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py data">
-<dt class="sig sig-object py" id="TARANG.lib.valid.val_para.OUTPUT_REAL_FIELD">
-<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">OUTPUT_REAL_FIELD</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.OUTPUT_REAL_FIELD" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py data">
@@ -899,18 +934,38 @@ document.write(`
 <dd></dd></dl>
 
 <dl class="py data">
-<dt class="sig sig-object py" id="TARANG.lib.valid.val_para.RANDOM_FORCING_TYPE">
-<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">RANDOM_FORCING_TYPE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'u'</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.RANDOM_FORCING_TYPE" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py data">
 <dt class="sig sig-object py" id="TARANG.lib.valid.val_para.forcing_range">
 <span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">forcing_range</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[4,</span> <span class="pre">6]</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.forcing_range" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py data">
-<dt class="sig sig-object py" id="TARANG.lib.valid.val_para.injections">
-<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">injections</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[0,</span> <span class="pre">0,</span> <span class="pre">0]</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.injections" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="TARANG.lib.valid.val_para.injection_u">
+<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">injection_u</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.injection_u" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="TARANG.lib.valid.val_para.injection_h">
+<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">injection_h</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.injection_h" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="TARANG.lib.valid.val_para.injection_plus">
+<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">injection_plus</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.injection_plus" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="TARANG.lib.valid.val_para.injection_minus">
+<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">injection_minus</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.injection_minus" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="TARANG.lib.valid.val_para.injection_vector_potential">
+<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">injection_vector_potential</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.injection_vector_potential" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="TARANG.lib.valid.val_para.injection_magnetic_helicity">
+<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">injection_magnetic_helicity</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.injection_magnetic_helicity" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py data">
@@ -1029,6 +1084,11 @@ document.write(`
 <dd></dd></dl>
 
 <dl class="py data">
+<dt class="sig sig-object py" id="TARANG.lib.valid.val_para.iter_field_save_buffer">
+<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">iter_field_save_buffer</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.iter_field_save_buffer" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
 <dt class="sig sig-object py" id="TARANG.lib.valid.val_para.iter_glob_energy_print_start">
 <span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">iter_glob_energy_print_start</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.iter_glob_energy_print_start" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
@@ -1036,6 +1096,11 @@ document.write(`
 <dl class="py data">
 <dt class="sig sig-object py" id="TARANG.lib.valid.val_para.iter_glob_energy_print_inter">
 <span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">iter_glob_energy_print_inter</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.iter_glob_energy_print_inter" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="TARANG.lib.valid.val_para.iter_glob_save_buffer">
+<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">iter_glob_save_buffer</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">100</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.iter_glob_save_buffer" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py data">
@@ -1049,6 +1114,11 @@ document.write(`
 <dd></dd></dl>
 
 <dl class="py data">
+<dt class="sig sig-object py" id="TARANG.lib.valid.val_para.iter_ekTk_save_buffer">
+<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">iter_ekTk_save_buffer</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">100</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.iter_ekTk_save_buffer" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
 <dt class="sig sig-object py" id="TARANG.lib.valid.val_para.iter_modes_save_start">
 <span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">iter_modes_save_start</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1000</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.iter_modes_save_start" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
@@ -1056,6 +1126,11 @@ document.write(`
 <dl class="py data">
 <dt class="sig sig-object py" id="TARANG.lib.valid.val_para.iter_modes_save_inter">
 <span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">iter_modes_save_inter</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.iter_modes_save_inter" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="TARANG.lib.valid.val_para.iter_modes_save_buffer">
+<span class="sig-prename descclassname"><span class="pre">TARANG.lib.valid.val_para.</span></span><span class="sig-name descname"><span class="pre">iter_modes_save_buffer</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#TARANG.lib.valid.val_para.iter_modes_save_buffer" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py data">
@@ -1102,12 +1177,12 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.kind"><code class="docutils literal notranslate"><span class="pre">kind</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.INPUT_SET_CASE"><code class="docutils literal notranslate"><span class="pre">INPUT_SET_CASE</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.input_case"><code class="docutils literal notranslate"><span class="pre">input_case</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.INPUT_FROM_FILE"><code class="docutils literal notranslate"><span class="pre">INPUT_FROM_FILE</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.INPUT_REAL_FIELD"><code class="docutils literal notranslate"><span class="pre">INPUT_REAL_FIELD</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.INPUT_ELSASSER"><code class="docutils literal notranslate"><span class="pre">INPUT_ELSASSER</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.INPUT_REAL_FIELD"><code class="docutils literal notranslate"><span class="pre">INPUT_REAL_FIELD</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.OUTPUT_REAL_FIELD"><code class="docutils literal notranslate"><span class="pre">OUTPUT_REAL_FIELD</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.INPUT_FROM_FILE"><code class="docutils literal notranslate"><span class="pre">INPUT_FROM_FILE</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.input_file_name"><code class="docutils literal notranslate"><span class="pre">input_file_name</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.input_dir"><code class="docutils literal notranslate"><span class="pre">input_dir</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.OUTPUT_REAL_FIELD"><code class="docutils literal notranslate"><span class="pre">OUTPUT_REAL_FIELD</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.output_dir"><code class="docutils literal notranslate"><span class="pre">output_dir</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.dimension"><code class="docutils literal notranslate"><span class="pre">dimension</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.Nx"><code class="docutils literal notranslate"><span class="pre">Nx</span></code></a></li>
@@ -1142,9 +1217,13 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.kappa_hyper_power"><code class="docutils literal notranslate"><span class="pre">kappa_hyper_power</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.FORCING_ENABLED"><code class="docutils literal notranslate"><span class="pre">FORCING_ENABLED</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.FORCING_SCHEME"><code class="docutils literal notranslate"><span class="pre">FORCING_SCHEME</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.RANDOM_FORCING_TYPE"><code class="docutils literal notranslate"><span class="pre">RANDOM_FORCING_TYPE</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.forcing_range"><code class="docutils literal notranslate"><span class="pre">forcing_range</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.injections"><code class="docutils literal notranslate"><span class="pre">injections</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.injection_u"><code class="docutils literal notranslate"><span class="pre">injection_u</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.injection_h"><code class="docutils literal notranslate"><span class="pre">injection_h</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.injection_plus"><code class="docutils literal notranslate"><span class="pre">injection_plus</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.injection_minus"><code class="docutils literal notranslate"><span class="pre">injection_minus</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.injection_vector_potential"><code class="docutils literal notranslate"><span class="pre">injection_vector_potential</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.injection_magnetic_helicity"><code class="docutils literal notranslate"><span class="pre">injection_magnetic_helicity</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.BUOYANCY_ENABLED"><code class="docutils literal notranslate"><span class="pre">BUOYANCY_ENABLED</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.Nb"><code class="docutils literal notranslate"><span class="pre">Nb</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.ROTATION_ENABLED"><code class="docutils literal notranslate"><span class="pre">ROTATION_ENABLED</span></code></a></li>
@@ -1168,12 +1247,16 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.modes_save"><code class="docutils literal notranslate"><span class="pre">modes_save</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_field_save_start"><code class="docutils literal notranslate"><span class="pre">iter_field_save_start</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_field_save_inter"><code class="docutils literal notranslate"><span class="pre">iter_field_save_inter</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_field_save_buffer"><code class="docutils literal notranslate"><span class="pre">iter_field_save_buffer</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_glob_energy_print_start"><code class="docutils literal notranslate"><span class="pre">iter_glob_energy_print_start</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_glob_energy_print_inter"><code class="docutils literal notranslate"><span class="pre">iter_glob_energy_print_inter</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_glob_save_buffer"><code class="docutils literal notranslate"><span class="pre">iter_glob_save_buffer</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_ekTk_save_start"><code class="docutils literal notranslate"><span class="pre">iter_ekTk_save_start</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_ekTk_save_inter"><code class="docutils literal notranslate"><span class="pre">iter_ekTk_save_inter</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_ekTk_save_buffer"><code class="docutils literal notranslate"><span class="pre">iter_ekTk_save_buffer</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_modes_save_start"><code class="docutils literal notranslate"><span class="pre">iter_modes_save_start</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_modes_save_inter"><code class="docutils literal notranslate"><span class="pre">iter_modes_save_inter</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.iter_modes_save_buffer"><code class="docutils literal notranslate"><span class="pre">iter_modes_save_buffer</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#TARANG.lib.valid.val_para.VALIDATE_SOLVER"><code class="docutils literal notranslate"><span class="pre">VALIDATE_SOLVER</span></code></a></li>
 </ul>
 </li>

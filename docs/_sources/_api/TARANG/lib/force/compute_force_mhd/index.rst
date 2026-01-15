@@ -13,6 +13,7 @@ Functions
    TARANG.lib.force.compute_force_mhd.compute_carati_forcing
    TARANG.lib.force.compute_force_mhd.compute_random_forcing
    TARANG.lib.force.compute_force_mhd.compute_random_forcing_old
+   TARANG.lib.force.compute_force_mhd.compute_taylor_green_forcing
    TARANG.lib.force.compute_force_mhd.craya_to_cartesian
 
 
@@ -38,6 +39,12 @@ Module Contents
 .. py:function:: compute_random_forcing(para, U, B, univ)
 
 .. py:function:: compute_random_forcing_old(para, U, B, univ)
+
+.. py:function:: compute_taylor_green_forcing(para, U)
+
+   Computes spectral forcing for Taylor-Green Dynamo (MHD).
+
+
 
 .. py:function:: craya_to_cartesian(u1, Vkx, Vkz, k_mag, i, j)
 
